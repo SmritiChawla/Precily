@@ -26,7 +26,7 @@ Description
 
 Data folder contains processed CCLE/GDSC and CCLE/CTRPv2 datasets used for machine learning tasks. 
 
-This folder contains codes for evaluating the CCLE/GDSC data trained model and includes the following subdirectories: 
+1. Fig1: This folder contains codes for evaluating the CCLE/GDSC data trained model and includes the following subdirectories: 
 
 Fig1c: Codes for reproducing different approaches used for benchmarking Precily. Individual codes are provided to run the respective methods. Also, codes to assess the performance of individual methods are provided based on pre-trained models. For Random Forest, pre-trained pathway and gene based models are provided in the link [https://drive.google.com/drive/folders/1BbSNS_DXSaLgXt8MVeoySdr0uB-81xKJ?usp=sharing]. 
 
