@@ -58,6 +58,11 @@ def model_builder(hp):
                 loss='mean_squared_error') 
   return model
 
+#train_set, test_set = cell_line_split(df, 0.9)
+#df = None
+#train_set.to_csv("Train_data.csv",index=False)
+#test_set.to_csv("Test_data.csv",index=False)
+#test_set = None
 
 CL_x = train_set[train_set.columns[0]].unique()
 #np.random.shuffle(CL_x)
