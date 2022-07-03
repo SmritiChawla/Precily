@@ -36,7 +36,7 @@ Data folder contains processed CCLE/GDSC and CCLE/CTRPv2 datasets used for machi
    Fig1e. CCLE/CTRPv2 data trained models and independent test dataset used to evaluate Precily based deep neural network model.
 
 
-2.  Fig2: TThis folder contains codes used for evaluating CCLE/GDSC data trained model on scRNA-seq datasets and includes the following subdirectories:
+2.  Fig2: This folder contains codes used for evaluating CCLE/GDSC data trained model on scRNA-seq datasets and includes the following subdirectories:
 
     Fig2a: TThis folder contains CCLE/GDSC dataset trained models, processed Kinker,   G. S. et al. scRNA-seq dataset and ground truth labels for evaluation of         Precily.
     
@@ -44,15 +44,17 @@ Data folder contains processed CCLE/GDSC and CCLE/CTRPv2 datasets used for machi
 
 
 
-3. Fig3: This directory contains codes for evaluation of Precily on prostate cancer cell line dataset. The GSVA scores for untreated prostate cancer cell line and treated LNCaP cell lines are provided for drug response prediction using PRAD as a cancer type. 
-
+3. Fig3: This directory contains codes for evaluating Precily on the prostate cancer cell line datasets. The GSVA scores for untreated prostate cancer cell lines and treated LNCaP cell lines are provided for drug response prediction using PRAD as a cancer type. 
 
 4. Fig4: This directory contains codes for reproducing results for LNCaP derived xenografts datasets. We have included predictions for 155 drugs for 54 samples and GSVA scores.
 
 
-5. Fig5. This directory contains codes for evaluation of model trained on TCGA patient RNA-seq bulk profiles.
-Fig5a folder contains script and data used for training AutoML models.
-Fig5b folder contains predictions obtained on TCGA test dataset using best AutoML model and code for computing survival on these predictions.
-Fig5d-f folder contains codes for evaluating our model using external Wagle, Nikhil, et al. dataset. For drug response prediction we have used SKCM as a cancer type.
+5. Fig5. This directory contains codes for evaluating model trained on TCGA patient RNA-seq bulk profiles.
+
+   Fig5a folder contains script and data used for training AutoML models.
+
+   Fig5b folder contains predictions on the TCGA test dataset using the best AutoML model and code for computing survival on these predictions.
+
+   Fig5d-f folder contains codes for evaluating our model using the external Wagle, Nikhil, et al. dataset. For drug response prediction, we have used SKCM as a cancer    type.
 
 6. Supplementary directory contains codes for reproducing supplementary figures and some additional codes used for analyses.
