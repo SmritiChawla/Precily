@@ -36,9 +36,12 @@ Data folder contains processed CCLE/GDSC and CCLE/CTRPv2 datasets used for machi
    Fig1e. CCLE/CTRPv2 data trained models and independent test dataset used to evaluate Precily based deep neural network model.
 
 
-2.  Fig2: This folder contains codes used for evaluating CCLE/GDSC data trained model on scRNA-seq datasets and contains following subdirectories:
-Fig2a: This folder contains CCLE/GDSC dataset trained models, processed Kinker, G. S. et al. scRNA-seq dataset and ground truth labels for evaluation of Precily.
-Fig2b: This folder contains code for assessing the efficiency of our model on Lee et al scRNA-seq profiles of MDA-MB-231 breast cancer cells. DrugsPred.R function is used for making predictions. This function takes 3 files as input: enrichment scores computed used GSVA method, metadata file containing information about cell lines and drugs along with molecular descriptors and Cancer type for the input test dataset. For Lee et al we have specified BRCA as a cancer type.
+2.  Fig2: TThis folder contains codes used for evaluating CCLE/GDSC data trained model on scRNA-seq datasets and includes the following subdirectories:
+
+    Fig2a: TThis folder contains CCLE/GDSC dataset trained models, processed Kinker,   G. S. et al. scRNA-seq dataset and ground truth labels for evaluation of         Precily.
+    
+    Fig2b: This folder contains code for assessing the efficiency of our model on Lee et al. scRNA-seq profiles of MDA-MB-231 breast cancer cells. DrugsPred.R function    is used for making predictions. This function takes three files as input: enrichment scores computed using the GSVA method, metadata file containing information  about cell lines and drugs, molecular descriptors, and Cancer type for the input test dataset. For Lee et al. we have specified BRCA as a cancer type.
+
 
 
 3. Fig3: This directory contains codes for evaluation of Precily on prostate cancer cell line dataset. The GSVA scores for untreated prostate cancer cell line and treated LNCaP cell lines are provided for drug response prediction using PRAD as a cancer type. 
