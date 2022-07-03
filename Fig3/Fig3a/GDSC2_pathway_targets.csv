@@ -1,0 +1,195 @@
+,PUTATIVE_TARGET,PATHWAY_NAME
+Camptothecin,TOP1,DNA replication
+Vinblastine,Microtubule destabiliser,Mitosis
+Cisplatin,DNA crosslinker,DNA replication
+Cytarabine,Antimetabolite,Other
+Docetaxel,Microtubule stabiliser,Mitosis
+Gefitinib,EGFR,EGFR signaling
+Navitoclax,"BCL2, BCL-XL, BCL-W",Apoptosis regulation
+Vorinostat,"HDAC inhibitor Class I, IIa, IIb, IV",Chromatin histone acetylation
+Nilotinib,ABL,ABL signaling
+Olaparib,"PARP1, PARP2",Genome integrity
+Axitinib,"PDGFR, KIT, VEGFR",RTK signaling
+AZD7762,"CHEK1, CHEK2",Cell cycle
+SB216763,"GSK3A, GSK3B",WNT signaling
+KU-55933,ATM,Genome integrity
+Afatinib,"ERBB2, EGFR",EGFR signaling
+Staurosporine,Broad spectrum kinase inhibitor,RTK signaling
+PLX-4720,BRAF,ERK MAPK signaling
+NU7441,DNAPK,Genome integrity
+Doramapimod,"p38, JNK2",JNK and p38 signaling
+Wee1 Inhibitor,"WEE1, CHEK1",Cell cycle
+Nutlin-3a (-),MDM2,p53 pathway
+Mirin,MRE11,Genome integrity
+PD173074,"FGFR1, FGFR2, FGFR3",RTK signaling
+ZM447439,"AURKA, AURKB",Mitosis
+Alisertib,AURKA,Mitosis
+RO-3306,CDK1,Cell cycle
+MK-2206,"AKT1, AKT2",PI3K/MTOR signaling
+Palbociclib,"CDK4, CDK6",Cell cycle
+Dactolisib,"PI3K (class 1), MTORC1, MTORC2",PI3K/MTOR signaling
+Pictilisib,PI3K (class 1),PI3K/MTOR signaling
+AZD8055,"MTORC1, MTORC2",PI3K/MTOR signaling
+PD0325901,"MEK1, MEK2",ERK MAPK signaling
+Obatoclax Mesylate,"BCL2, BCL-XL, BCL-W, MCL1",Apoptosis regulation
+5-Fluorouracil,Antimetabolite (DNA & RNA),Other
+Dasatinib,"ABL, SRC, Ephrins, PDGFR, KIT","Other, kinases"
+Paclitaxel,Microtubule stabiliser,Mitosis
+Crizotinib,"MET, ALK, ROS1",RTK signaling
+Rapamycin,MTORC1,PI3K/MTOR signaling
+Sorafenib,"PDGFR, KIT, VEGFR, RAF","Other, kinases"
+BI-2536,"PLK1, PLK2, PLK3",Cell cycle
+Irinotecan,TOP1,DNA replication
+Oxaliplatin,DNA alkylating agent,DNA replication
+BMS-536924,"IGF1R, IR",IGF1R signaling
+GSK1904529A,"IGF1R, IR",IGF1R signaling
+Tozasertib,"AURKA, AURKB, AURKC, others",Mitosis
+PF-4708671,S6K1,PI3K/MTOR signaling
+PRIMA-1MET,TP53 activation,p53 pathway
+Erlotinib,EGFR,EGFR signaling
+Niraparib,"PARP1, PARP2",Genome integrity
+MK-1775,"WEE1, PLK1",Cell cycle
+Dinaciclib,"CDK1, CDK2, CDK5, CDK9",Cell cycle
+Gemcitabine,Pyrimidine antimetabolite,DNA replication
+Bortezomib,Proteasome,Protein stability and degradation
+GSK269962A,"ROCK1, ROCK2",Cytoskeleton
+SB505124,"TGFBR1, ACVR1B, ACVR1C",RTK signaling
+Tamoxifen,ESR1,Hormone-related
+Fulvestrant,ESR,Hormone-related
+EPZ004777,DOT1L,Chromatin histone methylation
+YK-4-279,RNA helicase A,Other
+Daporinad,NAMPT,Metabolism
+BMS-345541,"IKK-1, IKK-2",Other
+AZ960,"JAK2, JAK3","Other, kinases"
+Talazoparib,"PARP1, PARP2",Genome integrity
+XAV939,"TNKS1, TNKS2",WNT signaling
+Trametinib,"MEK1, MEK2",ERK MAPK signaling
+Dabrafenib,BRAF,ERK MAPK signaling
+Temozolomide,DNA alkylating agent,DNA replication
+AZD5438,CDK2,Cell cycle
+IAP_5620,IAP,Other
+AZD2014,"mTORC1, mTORC2",PI3K/MTOR signaling
+AZD1208,"PIM1, PIM2, PIM3","Other, kinases"
+AZD1332,"NTRK1, NTRK2, NTRK3",RTK signaling
+Ruxolitinib,"JAK1, JAK2","Other, kinases"
+Linsitinib,IGF1R,IGF1R signaling
+Epirubicin,Anthracycline,DNA replication
+Cyclophosphamide,Alkylating agent,DNA replication
+Pevonedistat,NAE,Other
+Sapitinib,"EGFR, ERBB2, ERBB3",EGFR signaling
+Uprosertib,"AKT1, AKT2, AKT3",PI3K/MTOR signaling
+LCL161,"XIAP, IAP1, IAP2",Apoptosis regulation
+Lapatinib,"EGFR, ERBB2",EGFR signaling
+Luminespib,HSP90,Protein stability and degradation
+Alpelisib,PI3Kalpha,PI3K/MTOR signaling
+Taselisib,PI3K (beta sparing),PI3K/MTOR signaling
+EPZ5676,DOT1L,Chromatin histone methylation
+SCH772984,"ERK1, ERK2",ERK MAPK signaling
+IWP-2,PORCN,WNT signaling
+Leflunomide,Pyrimidine synthesis inhibitor,DNA replication
+Entinostat,"HDAC1, HDAC3",Chromatin histone acetylation
+OSI-027,"MTORC1, MTORC2",PI3K/MTOR signaling
+LGK974,PORCN,WNT signaling
+VE-822,ATR,Genome integrity
+WZ4003,"NUAK1, NUAK2","Other, kinases"
+CZC24832,PI3Kgamma,PI3K/MTOR signaling
+AZD5582,"XIAP, cIAP",Apoptosis regulation
+GSK2606414,PERK,Metabolism
+PFI3,"Polybromo 1, SMARCA4, SMARCA2",Chromatin other
+PCI-34051,"HDAC8, HDAC6, HDAC1",Chromatin histone acetylation
+Wnt-C59,PORCN,WNT signaling
+I-BET-762,"BRD2, BRD3, BRD4",Chromatin other
+RVX-208,BRD4,Chromatin other
+OTX015,"BRD2, BRD3, BRD4",Chromatin other
+GSK343,EZH2,Chromatin histone methylation
+ML323,"USP1, UAF1",Protein stability and degradation
+Entospletinib,SYK,"Other, kinases"
+PRT062607,SYK,"Other, kinases"
+Ribociclib,"CDK4, CDK6",Cell cycle
+AGI-6780,IDH2 R140Q mutant,Metabolism
+Picolinici-acid,Inflammatory related,Other
+AZD5153,BRD4,Chromatin other
+CDK9_5576,CDK9,Cell cycle
+CDK9_5038,CDK9,Cell cycle
+Eg5_9814,KSP11,Other
+ERK_2440,"ERK1,ERK2",ERK MAPK signaling
+ERK_6604,"ERK1,ERK2",ERK MAPK signaling
+IRAK4_4710,IRAK4,"Other, kinases"
+JAK1_8709,JAK1,"Other, kinases"
+AZD5991,MCL1,Apoptosis regulation
+PAK_5339,"PAK1, PAK2",Cytoskeleton
+TAF1_5496,TAF1,Other
+ULK1_4989,ULK1,"Other, kinases"
+VSP34_8731,VSP34,Other
+Selumetinib,"MEK1, MEK2",ERK MAPK signaling
+IGF1R_3801,IGFR1,IGF1R signaling
+JAK_8517,"JAK1, JAK2","Other, kinases"
+AZD4547,"FGFR1, FGFR2, FGFR3",RTK signaling
+Ibrutinib,BTK,"Other, kinases"
+Zoledronate,NA,Unclassified
+Acetalax,NA,Unclassified
+Carmustine,NA,DNA replication
+Topotecan,NA,DNA replication
+Teniposide,NA,DNA replication
+Mitoxantrone,NA,DNA replication
+Dactinomycin,NA,Other
+Fludarabine,NA,Unclassified
+Nelarabine,NA,DNA replication
+Fulvestrant,NA,Hormone-related
+Vincristine,NA,Mitosis
+Podophyllotoxin bromide,NA,Unclassified
+Dihydrorotenone,NA,Unclassified
+Gallibiscoquinazole,NA,Unclassified
+Elephantin,NA,Unclassified
+Sinularin,NA,Unclassified
+Sabutoclax,"BCL2,  BCL-XL,  BFL1, MCL1",Apoptosis regulation
+LY2109761,TGFB1,Other
+OF-1,"BRPF1B, BRPF2",Chromatin histone acetylation
+MN-64,"TNKS1, TNKS2",WNT signaling
+KRAS (G12C) Inhibitor-12,KRAS (G12C),ERK MAPK signaling
+MG-132,"Proteasome, CAPN1",Protein stability and degradation
+BDP-00009066,MRCKB_HUMAN,Cytoskeleton
+Buparlisib,"PI3Kalpha, PI3Kdelta, PI3Kbeta, PI3Kgamma",PI3K/MTOR signaling
+Ulixertinib,"ERK1, ERK2",ERK MAPK signaling
+Venetoclax,BCL2,Apoptosis regulation
+ABT737,"BCL2, BCL-XL,  BCL-W, BCL-B, BFL1",Apoptosis regulation
+Dactinomycin,RNA polymerase,Other
+Afuresertib,"AKT1, AKT2, AKT3",PI3K/MTOR signaling
+AGI-5198,IDH1 (R132H),Metabolism
+AZD3759,EGFR,EGFR signaling
+AZD5363,"AKT1, AKT2, AKT3, ROCK2","Other, kinases"
+AZD6738,ATR,Genome integrity
+AZD8186,"PI3Kalpha, PI3Kbeta",PI3K/MTOR signaling
+Osimertinib,EGFR,EGFR signaling
+Cediranib,"VEGFR, FLT1, FLT2, FLT3, FLT4, KIT, PDGFRB",RTK signaling
+Ipatasertib,"AKT1, AKT, AKT3",PI3K/MTOR signaling
+GDC0810,"ESR1, ESR2",Hormone-related
+GNE-317,PI3Kalpha,PI3K/MTOR signaling
+GSK2578215A,LRRK2,"Other, kinases"
+I-BRD9,BRD9,Chromatin other
+Telomerase Inhibitor IX,Telomerase,Genome integrity
+MIRA-1,TP53,p53 pathway
+NVP-ADW742,IGF1R,IGF1R signaling
+P22077,"USP7, USP47",Protein stability and degradation
+Savolitinib,MET,RTK signaling
+UMI-77,MCL1,Apoptosis regulation
+WIKI4,"TNKS1, TNKS2",WNT signaling
+Sepantronium bromide,BIRC5,Apoptosis regulation
+MIM1,MCL1,Apoptosis regulation
+WEHI-539,BCL-XL,Apoptosis regulation
+BPD-00008900,NA,Other
+Foretinib,"MET, KDR, TIE2, VEGFR3/FLT4, RON, PDGFR, FGFR1, EGFR",RTK signaling
+BIBR-1532,TERT,Genome integrity
+Pyridostatin,G-quadruplex stabiliser,DNA replication
+AMG-319,PI3K (beta sparing),PI3K/MTOR signaling
+MK-8776,"CHEK1, CHEK2, CDK2",Cell cycle
+Vinorelbine,Microtubule destabiliser,Mitosis
+VX-11e,ERK2,ERK MAPK signaling
+LJI308,"RSK2, RSK1, RSK3",PI3K/MTOR signaling
+AZ6102,"TNKS1, TNKS2",WNT signaling
+GSK591,PMRT5,Chromatin histone methylation
+VE821,ATR,Genome integrity
+AZD6482,PI3Kbeta,PI3K/MTOR signaling
+AT13148,AKT1,PI3K/MTOR signaling
+BMS-754807,"IGF1R, IR",IGF1R signaling
+JQ1,"BRD2, BRD3, BRD4, BRDT",Chromatin other
