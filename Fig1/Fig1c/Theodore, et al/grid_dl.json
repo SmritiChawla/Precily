@@ -1,0 +1,56 @@
+[
+  {
+    "activation": ["TanhWithDropout"],
+    "adaptive_rate": [true],
+    "l2": [0.01, 0.001, 0.0001],
+    "epochs": [10, 50, 100, 200],
+    "hidden": [
+      [256, 256]
+    ],
+    "hidden_dropout_ratios": [
+      [0.1, 0.1],
+      [0.3, 0.3],
+      [0.5, 0.5]
+    ],
+    "input_dropout_ratio": [0, 0.1, 0.5],
+    "stopping_rounds": [5],
+    "stopping_tolerance": [0.01],
+    "max_runtime_secs": [10800]
+  },
+  {
+    "activation": ["TanhWithDropout"],
+    "adaptive_rate": [true],
+    "l2": [0.01, 0.001, 0.0001],
+    "epochs": [10, 50, 100, 200],
+    "hidden": [
+      [128, 128, 128]
+    ],
+    "hidden_dropout_ratios": [
+      [0.1, 0.1, 0.1],
+      [0.3, 0.3, 0.3],
+      [0.5, 0.5, 0.5]
+    ],
+    "input_dropout_ratio": [0, 0.1, 0.5],
+    "stopping_rounds": [5],
+    "max_runtime_secs": [10800],
+    "stopping_tolerance": [0.01]
+  },
+  {
+    "activation": ["TanhWithDropout"],
+    "adaptive_rate": [true],
+    "l2": [0.01, 0.001, 0.0001],
+    "epochs": [10, 50, 100, 200],
+    "hidden": [
+      [512]
+    ],
+    "hidden_dropout_ratios": [
+      [0.1],
+      [0.3],
+      [0.5]
+    ],
+    "input_dropout_ratio": [0, 0.1, 0.5],
+    "stopping_rounds": [5],
+    "stopping_tolerance": [0.01],
+    "max_runtime_secs": [10800]
+  }
+]
