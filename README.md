@@ -12,7 +12,7 @@ Getting started
 
 1. Download Github repository
 
-   git clone https://github.com/SmritiChawla/PrecOnco.git
+   git clone https://github.com/SmritiChawla/Precily.git
 
 2. Packages required
 
