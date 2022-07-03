@@ -25,8 +25,10 @@ Getting started
 
 Description
 
+Data_processing folder contains code for processing data used for deep neural netwrk. 
+
 1. Fig1: This folder contains codes used for evaluating CCLE/GDSC data trained model and contains following subdirectories:
-Fig1c: Codes for reproducing different approaches used for benchmarking Precily. Individual codes are provided to run the respective methods. Also codes to assess performance of individual methods are provided  based on pretrained models. 
+Fig1c: Codes for reproducing different approaches used for benchmarking Precily. Individual codes are provided to run the respective methods. Also codes to assess performance of individual methods are provided based on pretrained models. For Random Forest, pre-trained pathway and gene based models are provided in the link [https://drive.google.com/drive/folders/1BbSNS_DXSaLgXt8MVeoySdr0uB-81xKJ?usp=sharing].
 Fig1d. CCLE/GDSC2 data trained models and test dataset used for evaluation of Precily based deep neural network model.
 Fig1d. CCLE/CTRPv2 data trained models and test dataset used for evaluation of Precily based deep neural network model.
 2.  Fig2: This folder contains codes used for evaluating CCLE/GDSC data trained model on scRNA-seq datasets and contains following subdirectories:
@@ -38,4 +40,4 @@ Fig2b: This folder contains code for assessing the efficiency of our model on Le
 Fig5a folder contains script and data used for training AutoML models.
 Fig5b folder contains predictions obtained on TCGA test dataset using best AutoML model and code for computing survival on these predictions.
 Fig5d-f folder contains codes for evaluating our model using external Wagle, Nikhil, et al. dataset. For drug response prediction we have used SKCM as a cancer type.
-6. Supplementary directory contains codes for reproducing supplementary figures.
+6. Supplementary directory contains codes for reproducing supplementary figures and some additional codes used for analyses.
