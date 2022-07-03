@@ -6,8 +6,7 @@ Title: Gene expression based inference of cancer drug sensitivity
 
 ![Workflow](Workflow.png)
 
-This resource provides code to reproduce key results in the manuscript: Gene expression based inference of drug resistance in cancer.
-
+This resource provides code to reproduce key results in the manuscript.
 Getting started
 
 1. Download Github repository
