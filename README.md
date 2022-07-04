@@ -101,12 +101,12 @@ Getting started
    
   Fig 4h. This directory contains code and SMILES to predict drug response for three drugs (Apalutamide, Enzalutamide and Bicalutamide). These three drugs are not part of our training data.
 
- * Fig5. This directory contains codes for evaluating model trained on TCGA patient RNA-seq bulk profiles.
+ * Fig 5. This directory contains codes for evaluating model trained on TCGA patient RNA-seq bulk profiles.
 
-   Fig5a folder contains script and data used for training AutoML models.
+   Fig 5a. folder contains script and data used for training AutoML models.
 
-   Fig5b folder contains predictions on the TCGA test dataset using the best AutoML model and code for computing survival on these predictions.
+   Fig 5b. folder contains predictions on the TCGA test dataset using the best AutoML model and code for computing survival on these predictions.
 
-   Fig5d-f folder contains codes for evaluating our model using the external Wagle, Nikhil, et al. dataset. For drug response prediction, we have used SKCM as a cancer    type.
+   Fig 5d-f. folder contains codes for evaluating our model using the external Wagle, Nikhil, et al. dataset. For drug response prediction, we have used SKCM as a cancer    type.
 
 * Supplementary directory contains codes for reproducing supplementary figures and some additional codes used for analyses.
