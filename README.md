@@ -33,7 +33,8 @@ Getting started
    
 <H3>Note</H3>
 
-* Data folder contains zipped file used for training CCLE/GDSC and CCLE/CTRPv2 models. Also, this folder contains pathway scores computed using GSVA used for evaludation of Precily. Individual datasets are also present in figurewise directories.
+* Data folder contains zipped file used for training CCLE/GDSC and CCLE/CTRPv2 models. The CCLE GSVA scores are also included in this folder. 
+*  Also, this folder contains pathway scores computed using GSVA used for evaludation of Precily. Individual datasets are also present in figurewise directories.
 
 * Use R script EnvSet.R provided in the directory EnvironmentSetup to setup environment in R for loading python trained deep neural network models.
 
