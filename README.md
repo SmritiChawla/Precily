@@ -31,11 +31,13 @@ Getting started
    * parsnip(v0.2.1)
    * ggridges(v0.5.3)
    
+<H3>Note</H3>
 
+* Data folder contains zipped file used for training CCLE/GDSC and CCLE/CTRPv2 models. Also, this folder contains pathway scores computed using GSVA used for evaludation of Precily. Individual datasets are also present in Figurewise directories
 
-<H4> Description </H4>
+<H3> Description </H3>
 
-   Fig1: This folder contains codes for evaluating the CCLE/GDSC data trained model and includes the following subdirectories: 
+   * Fig1: This folder contains codes for evaluating the CCLE/GDSC data trained model and includes the following subdirectories: 
 
    Fig1c: Codes for reproducing different approaches used for benchmarking Precily. Individual codes are provided to run the respective methods. Also, codes to assess 
    the performance of individual methods are provided based on pre-trained models. For Random Forest, pre-trained pathway and gene based models are provided in the        link [https://drive.google.com/drive/folders/1BbSNS_DXSaLgXt8MVeoySdr0uB-81xKJ?usp=sharing]. 
@@ -45,7 +47,7 @@ Getting started
    Fig1e. CCLE/CTRPv2 data trained models and independent test dataset used to evaluate Precily based deep neural network model.
 
 
-   Fig2: This folder contains codes used for evaluating CCLE/GDSC data trained model on scRNA-seq datasets and includes the following subdirectories:
+   * Fig2: This folder contains codes used for evaluating CCLE/GDSC data trained model on scRNA-seq datasets and includes the following subdirectories:
 
     Fig2a: TThis folder contains CCLE/GDSC dataset trained models, processed Kinker,   G. S. et al. scRNA-seq dataset and ground truth labels for evaluation of         Precily.
     
@@ -53,12 +55,12 @@ Getting started
 
 
 
-Fig3: This directory contains codes for evaluating Precily on the prostate cancer cell line datasets. The GSVA scores for untreated prostate cancer cell lines and treated LNCaP cell lines are provided for drug response prediction using PRAD as a cancer type. 
+* Fig3: This directory contains codes for evaluating Precily on the prostate cancer cell line datasets. The GSVA scores for untreated prostate cancer cell lines and treated LNCaP cell lines are provided for drug response prediction using PRAD as a cancer type. 
 
 Fig4: This directory contains codes for reproducing results for LNCaP derived xenografts datasets. We have included predictions for 155 drugs for 54 samples and GSVA scores.
 
 
- Fig5. This directory contains codes for evaluating model trained on TCGA patient RNA-seq bulk profiles.
+ * Fig5. This directory contains codes for evaluating model trained on TCGA patient RNA-seq bulk profiles.
 
    Fig5a folder contains script and data used for training AutoML models.
 
