@@ -53,15 +53,15 @@ Getting started
 
    * <b>Fig1: This folder contains codes for evaluating the CCLE/GDSC data trained model and includes the following subdirectories: <\b>
 
-   Fig1c: Codes for reproducing different approaches used for benchmarking Precily. Individual codes are provided to run the respective methods. Also, codes to assess 
+      Fig1c: Codes for reproducing different approaches used for benchmarking Precily. Individual codes are provided to run the respective methods. Also, codes to    assess 
    the performance of individual methods are provided based on pre-trained models. For Random Forest, pre-trained pathway and gene based models are provided in the        link [https://drive.google.com/drive/folders/1BbSNS_DXSaLgXt8MVeoySdr0uB-81xKJ?usp=sharing]. 
 
-   Fig1d. CCLE/GDSC2 data trained models and independent test dataset used to evaluate Precily based deep neural network model. 
+      Fig1d. CCLE/GDSC2 data trained models and independent test dataset used to evaluate Precily based deep neural network model. 
 
-   Fig1e. CCLE/CTRPv2 data trained models and independent test dataset used to evaluate Precily based deep neural network model.
+      Fig1e. CCLE/CTRPv2 data trained models and independent test dataset used to evaluate Precily based deep neural network model.
 
 
-   * <b>Fig2: This folder contains codes used for evaluating CCLE/GDSC data trained model on scRNA-seq datasets and includes the following subdirectories:<\b>
+   * <b>Fig2: This folder contains codes used for evaluating CCLE/GDSC data trained model on scRNA-seq datasets and includes the following subdirectories:</b>
 
     Fig2a. This folder contains CCLE/GDSC dataset trained models, processed Kinker,   G. S. et al. scRNA-seq dataset and ground truth labels for evaluation of         Precily.
     
@@ -74,6 +74,12 @@ Getting started
    Fig 3c.  This folder contains CCLE/GDSC pre trained models after removing LNCaP cell line to assess the performance of Precily on LNCaP cell lines and compare it with groudtruth from GDSC database.
    
    Fig 3d. This folder contains pre trained CCLE/GDSC models and enrichment scores of LNCaP cell lines under different treatment conditions for making predictions.
+   
+   Fig 3e. This folder contains enrichment scores of LNCaP cell lines under different treatment conditions to see enrichment of proliferation related pathways.
+   
+   Fig 3h. This folder contains pre trained CCLE/GDSC models and enrichment scores of LNCaP cell lines under different treatment conditions for analysis of predictions of DNA replication pathway related drug Cisplatin.
+   
+   Fig 3g. The folder contains CCLE/GDSC pre trained models and file containing SMILES for Orlistat and Metformin drug.
 
 
 Fig4: This directory contains codes for reproducing results for LNCaP derived xenografts datasets. We have included predictions for 155 drugs for 54 samples and GSVA scores.
