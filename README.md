@@ -53,56 +53,57 @@ Getting started
 
    * Fig1: This folder contains codes for evaluating the CCLE/GDSC data trained model and includes the following subdirectories: 
 
-     > Fig1c: Codes for reproducing different approaches used for benchmarking Precily. Individual codes are provided to run the respective methods. Also, codes to            assess the performance of individual methods are provided based on pre-trained models. For Random Forest, pre-trained pathway and gene based models are provided        in the link [https://drive.google.com/drive/folders/1BbSNS_DXSaLgXt8MVeoySdr0uB-81xKJ?usp=sharing]. 
+     Fig1c: Codes for reproducing different approaches used for benchmarking Precily. Individual codes are provided to run the respective methods. Also, codes to            assess the performance of individual methods are provided based on pre-trained models. For Random Forest, pre-trained pathway and gene based models are provided        in the link [https://drive.google.com/drive/folders/1BbSNS_DXSaLgXt8MVeoySdr0uB-81xKJ?usp=sharing]. 
 
-     > Fig1d. CCLE/GDSC2 data trained models and independent test dataset used to evaluate Precily based deep neural network model. 
+     Fig1d. CCLE/GDSC2 data trained models and independent test dataset used to evaluate Precily based deep neural network model. 
 
-     > Fig1e. CCLE/CTRPv2 data trained models and independent test dataset used to evaluate Precily based deep neural network model.
+     Fig1e. CCLE/CTRPv2 data trained models and independent test dataset used to evaluate Precily based deep neural network model.
 
 
    * Fig2: This folder contains codes used for evaluating CCLE/GDSC data trained model on scRNA-seq datasets and includes the following subdirectories:
 
-      Fig2a. This folder contains CCLE/GDSC dataset trained models, processed Kinker,   G. S. et al. scRNA-seq dataset and ground truth labels for evaluation of         Precily.
+     Fig2a. This folder contains CCLE/GDSC dataset trained models, processed Kinker,   G. S. et al. scRNA-seq dataset and ground truth labels for evaluation of         Precily.
     
-      Fig2b. This folder contains code for assessing the efficiency of our model on Lee et al. scRNA-seq profiles of MDA-MB-231 breast cancer cells. 
+     Fig2b. This folder contains code for assessing the efficiency of our model on Lee et al. scRNA-seq profiles of MDA-MB-231 breast cancer cells. 
 
 
 * Fig3: This directory contains codes for evaluating Precily on the prostate cancer cell line datasets. The GSVA scores for untreated prostate cancer cell lines and treated LNCaP cell lines are provided for drug response prediction.
-      Fg3a & b. Evaluation of Precily using Prostate cancer (PCa) baseline cell lines. This folder contains CCLE/GDSC2 models retrained after removing the concerned cell lines present in PCa cell line independent test set, GSVa scores. 
+      
+  Fg3a & b. Evaluation of Precily using Prostate cancer (PCa) baseline cell lines. This folder contains CCLE/GDSC2 models retrained after removing the concerned cell lines present in PCa cell line independent test set, GSVa scores. 
    
-         Fig 3c.  This folder contains CCLE/GDSC pre trained models after removing LNCaP cell line to assess the performance of Precily on LNCaP cell lines and compare it with groudtruth from GDSC database.
+  Fig 3c.  This folder contains CCLE/GDSC pre trained models after removing LNCaP cell line to assess the performance of Precily on LNCaP cell lines and compare it with groudtruth from GDSC database.
    
-         Fig 3d. This folder contains pre trained CCLE/GDSC models and enrichment scores of LNCaP cell lines under different treatment conditions for making predictions.
+  Fig 3d. This folder contains pre trained CCLE/GDSC models and enrichment scores of LNCaP cell lines under different treatment conditions for making predictions.
    
-         Fig 3e. This folder contains enrichment scores of LNCaP cell lines under different treatment conditions to see enrichment of proliferation related pathways.
+  Fig 3e. This folder contains enrichment scores of LNCaP cell lines under different treatment conditions to see enrichment of proliferation related pathways.
    
-         Fig 3h. This folder contains pre trained CCLE/GDSC models and enrichment scores of LNCaP cell lines under different treatment conditions for analysis of predictions of DNA replication pathway related drug Cisplatin.
+  Fig 3f. This folder contains pre trained CCLE/GDSC models and enrichment scores of LNCaP cell lines under different treatment conditions for analysis of predictions of DNA replication pathway related drug Cisplatin.
    
-         Fig 3g. The folder contains CCLE/GDSC pre trained models and file containing SMILES for Orlistat and Metformin drug.
+  Fig 3g. The folder contains CCLE/GDSC pre trained models and file containing SMILES for Orlistat and Metformin drug.
 
 
 * Fig4: This directory contains codes for reproducing results for LNCaP derived xenografts datasets. We have included predictions for 155 drugs for 54 samples and GSVA scores.
    
-         Fig 4b. CCLE/GDSC pretrained models for making predictions on PCa xenograft data. This directory also contains pre-computed predictions used for downstream analysis. Our xenograft dataset clustered into 3 groups based on the predictions.
+  Fig 4b. CCLE/GDSC pretrained models for making predictions on PCa xenograft data. This directory also contains pre-computed predictions used for downstream analysis.  Our xenograft dataset clustered into 3 groups based on the predictions.
    
-         Fig 4c. This folder contains code to visualiza distribution of predictions across 3 clsuters.
+  Fig 4c. This folder contains code to visualize distribution of predictions across 3 clsuters.
    
-         Fig 4d. This folder contains pathway enrichment scores of PCa xenograft datset to visualize distribution of proliferation related patwhays across 3 clsuters.
+  Fig 4d. This folder contains pathway enrichment scores of PCa xenograft datset to visualize distribution of proliferation related pathways across 3 clsuters.
    
-         Fig 4e. This directory contains pre-computed predictions on PCa xenograft dataset for visualization of overall predictions across different tumor types.
+  Fig 4e. This directory contains pre-computed predictions on PCa xenograft dataset for visualization of overall predictions across different tumor types.
    
-         Fig 4f. This folder contains pathway enrichment scores of PCa xenograft datset to visualize distribution of proliferation related patwhays across tumor types.
+  Fig 4f. This folder contains pathway enrichment scores of PCa xenograft datset to visualize distribution of proliferation related pathways across tumor types.
    
-         Fig 4f. This directory contains pre-computed predictions on PCa xenograft dataset for analysing predictions of EGFR related inhibitors across tumor types.
+  Fig 4g. This directory contains pre-computed predictions on PCa xenograft dataset for analysing predictions of EGFR related inhibitors across tumor types.
    
-         Fig 4g. This directory contains code and SMILES to predict drug response for three drugs (Apalutamide, Enzalutamide and Bicalutamide). These three drugs are not part of our training data.
+  Fig 4h. This directory contains code and SMILES to predict drug response for three drugs (Apalutamide, Enzalutamide and Bicalutamide). These three drugs are not part of our training data.
 
    * Fig5. This directory contains codes for evaluating model trained on TCGA patient RNA-seq bulk profiles.
 
-         Fig5a folder contains script and data used for training AutoML models.
+     Fig5a folder contains script and data used for training AutoML models.
 
-         Fig5b folder contains predictions on the TCGA test dataset using the best AutoML model and code for computing survival on these predictions.
+     Fig5b folder contains predictions on the TCGA test dataset using the best AutoML model and code for computing survival on these predictions.
 
-         Fig5d-f folder contains codes for evaluating our model using the external Wagle, Nikhil, et al. dataset. For drug response prediction, we have used SKCM as a cancer    type.
+     Fig5d-f folder contains codes for evaluating our model using the external Wagle, Nikhil, et al. dataset. For drug response prediction, we have used SKCM as a cancer    type.
 
 * Supplementary directory contains codes for reproducing supplementary figures and some additional codes used for analyses.
