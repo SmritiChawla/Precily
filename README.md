@@ -1,5 +1,5 @@
 
-<H1> Precily: Deep neural network based framework for prediction of drug response in both in vivo and in vitro settings.</H1>
+<H1, align="center"> Precily: Deep neural network based framework for prediction of drug response in both in vivo and in vitro settings.</H1>
 
 ![Workflow](Workflow.png)
 
