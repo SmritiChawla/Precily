@@ -51,7 +51,7 @@ Getting started
 
 <H3> Description </H3>
 
-   * <b>Fig1: This folder contains codes for evaluating the CCLE/GDSC data trained model and includes the following subdirectories: </b>
+   * Fig1: This folder contains codes for evaluating the CCLE/GDSC data trained model and includes the following subdirectories: 
 
       Fig1c: Codes for reproducing different approaches used for benchmarking Precily. Individual codes are provided to run the respective methods. Also, codes to    assess 
    the performance of individual methods are provided based on pre-trained models. For Random Forest, pre-trained pathway and gene based models are provided in the        link [https://drive.google.com/drive/folders/1BbSNS_DXSaLgXt8MVeoySdr0uB-81xKJ?usp=sharing]. 
@@ -61,7 +61,7 @@ Getting started
       Fig1e. CCLE/CTRPv2 data trained models and independent test dataset used to evaluate Precily based deep neural network model.
 
 
-   * <b>Fig2: This folder contains codes used for evaluating CCLE/GDSC data trained model on scRNA-seq datasets and includes the following subdirectories:</b>
+   * Fig2: This folder contains codes used for evaluating CCLE/GDSC data trained model on scRNA-seq datasets and includes the following subdirectories:
 
     Fig2a. This folder contains CCLE/GDSC dataset trained models, processed Kinker,   G. S. et al. scRNA-seq dataset and ground truth labels for evaluation of         Precily.
     
@@ -82,7 +82,7 @@ Getting started
    Fig 3g. The folder contains CCLE/GDSC pre trained models and file containing SMILES for Orlistat and Metformin drug.
 
 
-Fig4: This directory contains codes for reproducing results for LNCaP derived xenografts datasets. We have included predictions for 155 drugs for 54 samples and GSVA scores.
+* Fig4: This directory contains codes for reproducing results for LNCaP derived xenografts datasets. We have included predictions for 155 drugs for 54 samples and GSVA scores.
    
    Fig 4b. CCLE/GDSC pretrained models for making predictions on PCa xenograft data. This directory also contains pre-computed predictions used for downstream analysis. Our xenograft dataset clustered into 3 groups based on the predictions.
    
@@ -100,10 +100,10 @@ Fig4: This directory contains codes for reproducing results for LNCaP derived xe
 
    * Fig5. This directory contains codes for evaluating model trained on TCGA patient RNA-seq bulk profiles.
 
-   Fig5a folder contains script and data used for training AutoML models.
+      Fig5a folder contains script and data used for training AutoML models.
 
-   Fig5b folder contains predictions on the TCGA test dataset using the best AutoML model and code for computing survival on these predictions.
+      Fig5b folder contains predictions on the TCGA test dataset using the best AutoML model and code for computing survival on these predictions.
 
-   Fig5d-f folder contains codes for evaluating our model using the external Wagle, Nikhil, et al. dataset. For drug response prediction, we have used SKCM as a cancer    type.
+      Fig5d-f folder contains codes for evaluating our model using the external Wagle, Nikhil, et al. dataset. For drug response prediction, we have used SKCM as a cancer    type.
 
 * Supplementary directory contains codes for reproducing supplementary figures and some additional codes used for analyses.
