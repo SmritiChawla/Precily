@@ -12,7 +12,7 @@ Getting started
 
    git clone https://github.com/SmritiChawla/Precily.git
 
-2. Packages required
+2. <H4> Packages required </H4>
 
    Packages: keras 2.8.0, keras-tuner 1.1.0, caret(v6.0.90), glmnet(v4.1.3), ranger(v0.13.1), GSVA(v1.40.1), h2o(v3.36.0.4), PubChemPy(v1.0.4), SMILESVec,   EDASeq(v2.26.1), impute(v1.66.0), ggpubr(v0.4.0), ggplot2(v3.3.5), pheatmap(v1.0.12), parsnip(v0.2.1), ggridges(v0.5.3).
    
@@ -21,9 +21,7 @@ Getting started
 
 4. Run individual codes from the figure wise directories for reproducing manuscript results.
 
-Description
-
-Data folder contains processed CCLE/GDSC and CCLE/CTRPv2 datasets used for machine learning tasks. 
+<H4> Description <H4>
 
 1. Fig1: This folder contains codes for evaluating the CCLE/GDSC data trained model and includes the following subdirectories: 
 
