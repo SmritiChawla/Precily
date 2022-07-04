@@ -34,7 +34,7 @@ Getting started
 <H3>Note</H3>
 
 * Data folder contains zipped file used for training CCLE/GDSC and CCLE/CTRPv2 models. The CCLE GSVA scores are also included in this folder. 
-*  Also, this folder contains pathway scores computed using GSVA used for evaludation of Precily. Individual datasets are also present in figurewise directories.
+* Data folder also contains pathway scores computed using GSVA for Prostate cancer datasets used for evaluation of Precily. Individual datasets are also present in figurewise directories.
 
 * Use R script EnvSet.R provided in the directory EnvironmentSetup to setup environment in R for loading python trained deep neural network models.
 
@@ -42,14 +42,14 @@ Getting started
 
 * We have provided pre trained CCLE/GDSC models for drug response prediction. DrugsPred.R is main function used for making predictions and takes following inputs:
    <br>1. Pathway enrichment scores/GSVA scores
-   <br>2. Metadata file. This file contains drugs, cell line names, cancer types and drug descriptors
+   <br>2. Metadata file. This file contains drugs and cell line names, cancer types and drug descriptors
    <br>3. Cancer Type. Type of cancer to be used for input test dataset. Cancer types are encoded in form of TCGA abbreviations. 
       
  <b>Example code:</b>
  
  ```Predictions = drugPred(enrichment.scores,metadata,"BRCA")```
  
- Output file is list of drug response predictions for number of samples present in test set.
+ Output file is list of drug response predictions for the indivisual samples present in test set.
  
 
 
