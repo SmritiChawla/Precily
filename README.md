@@ -39,14 +39,14 @@ Getting started
 
 * Run individual codes from the figure wise directories for reproducing manuscript results.
 
-* We have provided pre trained CCLE/GDSC models for drug response prediction. DrugsPred.R is main function used for making predictions and takes following inputs:<br>
+* We have provided pre trained CCLE/GDSC models for drug response prediction. DrugsPred.R is main function used for making predictions and takes following inputs:
    <br>1. Pathway enrichment scores/GSVA scores
    <br>2. Metadata file. This file contains drugs, cell line names, cancer types and drug descriptors
    <br>3. Cancer Type. Type of cancer to be used for input test dataset. Cancer types are encoded in form of TCGA abbreviations. 
       
  Example code:
  
- Predictions = drugPred(enrichment.scores,metadata,"BRCA")
+ ```Predictions = drugPred(enrichment.scores,metadata,"BRCA")```
 
 
 <H3> Description </H3>
