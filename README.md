@@ -8,11 +8,11 @@
 This resource provides code to reproduce key results in the manuscript.
 Getting started
 
-1. <H4>Download Github repository </H4>
+1. <H3>Download Github repository </H3>
 
    git clone https://github.com/SmritiChawla/Precily.git
 
-2. <H4> Packages required </H4>
+2. <H3> Packages required </H3>
 
    Packages: keras 2.8.0, keras-tuner 1.1.0, caret(v6.0.90), glmnet(v4.1.3), ranger(v0.13.1), GSVA(v1.40.1), h2o(v3.36.0.4), PubChemPy(v1.0.4), SMILESVec,   EDASeq(v2.26.1), impute(v1.66.0), ggpubr(v0.4.0), ggplot2(v3.3.5), pheatmap(v1.0.12), parsnip(v0.2.1), ggridges(v0.5.3).
    
