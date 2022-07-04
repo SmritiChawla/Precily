@@ -1,8 +1,6 @@
 
 <H1> Precily: Deep neural network based framework for prediction of drug response in both in vivo and in vitro settings.</H1>
 
-<H2> Title: Gene expression based inference of cancer drug sensitivity </H2>
-
 ![Workflow](Workflow.png)
 
 This resource provides code to reproduce key results in the manuscript.
