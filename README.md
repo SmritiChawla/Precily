@@ -51,7 +51,7 @@ Getting started
 
 <H3> Description </H3>
 
-   * <b>Fig1: This folder contains codes for evaluating the CCLE/GDSC data trained model and includes the following subdirectories: <\b>
+   * <b>Fig1: This folder contains codes for evaluating the CCLE/GDSC data trained model and includes the following subdirectories: </b>
 
       Fig1c: Codes for reproducing different approaches used for benchmarking Precily. Individual codes are provided to run the respective methods. Also, codes to    assess 
    the performance of individual methods are provided based on pre-trained models. For Random Forest, pre-trained pathway and gene based models are provided in the        link [https://drive.google.com/drive/folders/1BbSNS_DXSaLgXt8MVeoySdr0uB-81xKJ?usp=sharing]. 
@@ -83,9 +83,22 @@ Getting started
 
 
 Fig4: This directory contains codes for reproducing results for LNCaP derived xenografts datasets. We have included predictions for 155 drugs for 54 samples and GSVA scores.
+   
+   Fig 4b. CCLE/GDSC pretrained models for making predictions on PCa xenograft data. This directory also contains pre-computed predictions used for downstream analysis. Our xenograft dataset clustered into 3 groups based on the predictions.
+   
+   Fig 4c. This folder contains code to visualiza distribution of predictions across 3 clsuters.
+   
+   Fig 4d. This folder contains pathway enrichment scores of PCa xenograft datset to visualize distribution of proliferation related patwhays across 3 clsuters.
+   
+   Fig 4e. This directory contains pre-computed predictions on PCa xenograft dataset for visualization of overall predictions across different tumor types.
+   
+   Fig 4f. This folder contains pathway enrichment scores of PCa xenograft datset to visualize distribution of proliferation related patwhays across tumor types.
+   
+   Fig 4f. This directory contains pre-computed predictions on PCa xenograft dataset for analysing predictions of EGFR related inhibitors across tumor types.
+   
+   Fig 4g. This directory contains code and SMILES to predict drug response for three drugs (Apalutamide, Enzalutamide and Bicalutamide). These three drugs are not part of our training data.
 
-
- * Fig5. This directory contains codes for evaluating model trained on TCGA patient RNA-seq bulk profiles.
+   * Fig5. This directory contains codes for evaluating model trained on TCGA patient RNA-seq bulk profiles.
 
    Fig5a folder contains script and data used for training AutoML models.
 
@@ -93,4 +106,4 @@ Fig4: This directory contains codes for reproducing results for LNCaP derived xe
 
    Fig5d-f folder contains codes for evaluating our model using the external Wagle, Nikhil, et al. dataset. For drug response prediction, we have used SKCM as a cancer    type.
 
-Supplementary directory contains codes for reproducing supplementary figures and some additional codes used for analyses.
+* Supplementary directory contains codes for reproducing supplementary figures and some additional codes used for analyses.
