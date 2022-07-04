@@ -2,6 +2,8 @@ library(data.table)
 library(caret)
 library(glmnet)
 set.seed(123)
+
+##Loading training data
 data =  read.csv("Training_data.csv",sep=",",header=T,stringsAsFactors=F)
 Train_set= as.data.frame(data)
 colnames(Train_set)[1432] = "LN_IC50"

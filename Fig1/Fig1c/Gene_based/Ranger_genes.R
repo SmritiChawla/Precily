@@ -3,6 +3,7 @@ library(data.table)
 library(ranger)
 set.seed(123)
 
+###loading training data
 data = fread("Training_data.csv")
 data = as.data.frame(data)
 data = janitor::clean_names(data)
@@ -18,8 +19,6 @@ save(Test_set,file="Test_set.Rdata")
 
 ## Split data cell line wise
 CL_x = unique(Train_set[,1])
-
-
 Val = list()
 for(i in seq(1:5))
 {
@@ -37,7 +36,7 @@ for(i in seq(1:5))
   }
 }
 
-
+###Performing grid search
 hyper_grid <- expand.grid(
   mtry       = 1:10,
   num.trees = seq(100,1000,100),
@@ -46,13 +45,10 @@ hyper_grid <- expand.grid(
 
 
 for (i in 1:length(Val)){
-  
   pos = which(Train_set[,1] %in% Val[[i]])
   train = Train_set[-pos,c(3:ncol(Train_set))]
   Vals = Train_set[pos,c(3:ncol(Train_set))]
-  
   for(j in 1:nrow(hyper_grid)) {
-    
     
     # train model
     rf <- ranger(
@@ -76,7 +72,6 @@ set.seed(123)
 load("/home/smritic/NatComm/GeneBased/Ranger/data/Train_set.Rdata")
 Train = Train_set[,3:ncol(Train_set)]
 files = list.files(pattern = ".RData")
-
 for (i in 1:length(files)){
   load(files[[i]])
   model <- rand_forest(mode = "regression") %>%

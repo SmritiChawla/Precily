@@ -1,3 +1,4 @@
+##Importing libraries
 import numpy as np
 import pandas as pd
 import keras_tuner as kt
@@ -12,15 +13,17 @@ tf.config.threading.set_inter_op_parallelism_threads(1)
 tf.config.threading.set_intra_op_parallelism_threads(1)
 np.random.seed(2)
 
-file_path = 'Training_data.csv'
+##Loading training data
+df = pd.read_csv("Training_data.csv)
 directory = 'Path to directory'
 project_name = 'Genes'
+
+##Defining hyper parameters
 layers_range = (2, 6)
 units_range = (128, 256, 4)
 lr_values = [1e-3,1e-4,1e-5]
 
-df = pd.read_csv(file_path)
-
+##Define model
 def model_builder(hp):
   model = keras.Sequential()
   model.add(keras.layers.Dense(600, input_dim = 600, activation = 'relu'))
@@ -58,7 +61,7 @@ def model_builder(hp):
                 loss='mean_squared_error') 
   return model
 
-
+##Split data based on cell lines
 def cell_line_split(data, k):
   CL = data['CELL_LINE_NAME'].unique()
   np.random.shuffle(CL)
@@ -84,6 +87,7 @@ CL_x = train_set[train_set.columns[0]].unique()
 #np.random.shuffle(CL_x)
 CL_x = list(CL_x)
 
+##Perform hyper parameter tuning
 for i in range(5):
     A = set( CL_x[:i*len(CL_x)//5] + CL_x[(i+1)*len(CL_x)//5:] )
     B = set( CL_x[i*len(CL_x)//5:(i+1)*len(CL_x)//5] )
@@ -104,10 +108,10 @@ for i in range(5):
     X_val = val.iloc[: , 2:-1]
     Y_val = val.iloc[: , -1:]
     train, test = None, None
-    X_train.to_csv("Train_Set_30_"+str(i+1)+".csv",index=False)
-    Y_train.to_csv("Train_Set_truth30_"+str(i+1)+".csv",index=False)
-    X_val.to_csv("Val_Set_30_"+str(i+1)+".csv",index=False)
-    Y_val.to_csv("Val_Set_truth30_"+str(i+1)+".csv",index=False)
+    X_train.to_csv("Train_Set_"+str(i+1)+".csv",index=False)
+    Y_train.to_csv("Train_Set_truth_"+str(i+1)+".csv",index=False)
+    X_val.to_csv("Val_Set_"+str(i+1)+".csv",index=False)
+    Y_val.to_csv("Val_Set_truth_"+str(i+1)+".csv",index=False)
     
     tuner = kt.Hyperband(model_builder, # the hypermodel
                     objective='val_loss', # objective to optimize
@@ -120,8 +124,8 @@ for i in range(5):
     tuner.search(X_train, Y_train, epochs=30, validation_data = (X_val, Y_val), callbacks=[stop_early])
     best_hp=tuner.get_best_hyperparameters()[0]
     best_model = tuner.get_best_models()[0]
-    print(best_model)
-    # Build the model with the optimal hyperparameters
+   
+    #Build the model with the optimal hyperparameters
     h_model = tuner.hypermodel.build(best_hp)
     h_model.fit(X_train, Y_train, epochs=50, verbose = 1, batch_size = 128, validation_data = (X_val, Y_val))
     h_model.save('precily_cv_'+str(i+1)+'.hdf5')

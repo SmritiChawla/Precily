@@ -4,6 +4,7 @@ library(caret)
 library(glmnet)
 set.seed(123)
 
+###loading training data
 data = fread("Training_data.csv")
 data = as.data.frame(data)
 data = janitor::clean_names(data)
@@ -13,7 +14,6 @@ data = janitor::clean_names(data)
 set.seed(0)
 inx = sample(unique(data[,1]),0.10*length(unique(data[,1])))
 pos = which(data[,1] %in% inx)
-
 Train_set <- data[-pos,]
 Test_set  <- data[pos,]
 save(Train_set,file="Train_set.Rdata")
@@ -21,8 +21,6 @@ save(Test_set,file="Test_set.Rdata")
 
 ## Split data cell line wise
 CL_x = unique(Train_set[,1])
-
-
 Val = list()
 for(i in seq(1:5))
 {
@@ -41,7 +39,6 @@ for(i in seq(1:5))
 }
 
 pos = which(Train_set[,1] %in% Val[[1]])
-
 for (i in 1:length(Val)){
   pos = which(Train_set[,1] %in% Val[[i]])
   train = Train_set[-pos,c(3:ncol(Train_set))]
@@ -57,13 +54,12 @@ for (i in 1:length(Val)){
 set.seed(123)
 load("Train_set.Rdata")
 Train = Train_set[,3:ncol(Train_set)]
-
 files = list.files(pattern = ".RData")
 
 for (i in 1:length(files)){
   load(files[[i]])
   glm_model = train(ln_ic50~., data = Train, method = "glmnet",trControl = trainControl(method = 'none'), tuneGrid = expand.grid(
-    lambda = model$tuneValue$lambda, alpha = model$tuneValue$alpha))
+  lambda = model$tuneValue$lambda, alpha = model$tuneValue$alpha))
   save(glm_model, file = paste0("/home/smritic/NatComm/GeneBased/ELasticNet/Complete_data/Model_enet_",i, ".RData"))
   
 }
