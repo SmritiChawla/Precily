@@ -44,14 +44,14 @@ Getting started
    <br>2. Metadata file. This file contains drugs, cell line names, cancer types and drug descriptors
    <br>3. Cancer Type. Type of cancer to be used for input test dataset. Cancer types are encoded in form of TCGA abbreviations. 
       
- Example code:
+ <b>Example code:</b>
  
  ```Predictions = drugPred(enrichment.scores,metadata,"BRCA")```
 
 
 <H3> Description </H3>
 
-   * Fig1: This folder contains codes for evaluating the CCLE/GDSC data trained model and includes the following subdirectories: 
+   * <b>Fig1: This folder contains codes for evaluating the CCLE/GDSC data trained model and includes the following subdirectories: <\b>
 
    Fig1c: Codes for reproducing different approaches used for benchmarking Precily. Individual codes are provided to run the respective methods. Also, codes to assess 
    the performance of individual methods are provided based on pre-trained models. For Random Forest, pre-trained pathway and gene based models are provided in the        link [https://drive.google.com/drive/folders/1BbSNS_DXSaLgXt8MVeoySdr0uB-81xKJ?usp=sharing]. 
@@ -61,15 +61,20 @@ Getting started
    Fig1e. CCLE/CTRPv2 data trained models and independent test dataset used to evaluate Precily based deep neural network model.
 
 
-   * Fig2: This folder contains codes used for evaluating CCLE/GDSC data trained model on scRNA-seq datasets and includes the following subdirectories:
+   * <b>Fig2: This folder contains codes used for evaluating CCLE/GDSC data trained model on scRNA-seq datasets and includes the following subdirectories:<\b>
 
-    Fig2a: TThis folder contains CCLE/GDSC dataset trained models, processed Kinker,   G. S. et al. scRNA-seq dataset and ground truth labels for evaluation of         Precily.
+    Fig2a. This folder contains CCLE/GDSC dataset trained models, processed Kinker,   G. S. et al. scRNA-seq dataset and ground truth labels for evaluation of         Precily.
     
-    Fig2b: This folder contains code for assessing the efficiency of our model on Lee et al. scRNA-seq profiles of MDA-MB-231 breast cancer cells. DrugsPred.R function    is used for making predictions. This function takes three files as input: enrichment scores computed using the GSVA method, metadata file containing information  about cell lines and drugs, molecular descriptors, and Cancer type for the input test dataset. For Lee et al. we have specified BRCA as a cancer type.
+    Fig2b. This folder contains code for assessing the efficiency of our model on Lee et al. scRNA-seq profiles of MDA-MB-231 breast cancer cells. 
 
 
+* Fig3: <b>This directory contains codes for evaluating Precily on the prostate cancer cell line datasets. The GSVA scores for untreated prostate cancer cell lines and treated LNCaP cell lines are provided for drug response prediction.<\b> 
+   Fg3a & b. Evaluation of Precily using Prostate cancer (PCa) baseline cell lines. This folder contains CCLE/GDSC2 models retrained after removing the concerned cell lines present in PCa cell line independent test set, GSVa scores. 
+   
+   Fig 3c.  This folder contains CCLE/GDSC pre trained models after removing LNCaP cell line to assess the performance of Precily on LNCaP cell lines and compare it with groudtruth from GDSC database.
+   
+   Fig 3d. This folder contains pre trained CCLE/GDSC models and enrichment scores of LNCaP cell lines under different treatment conditions for making predictions.
 
-* Fig3: This directory contains codes for evaluating Precily on the prostate cancer cell line datasets. The GSVA scores for untreated prostate cancer cell lines and treated LNCaP cell lines are provided for drug response prediction using PRAD as a cancer type. 
 
 Fig4: This directory contains codes for reproducing results for LNCaP derived xenografts datasets. We have included predictions for 155 drugs for 54 samples and GSVA scores.
 
