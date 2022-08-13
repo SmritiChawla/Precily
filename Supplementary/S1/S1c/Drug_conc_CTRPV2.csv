@@ -1,0 +1,378 @@
+"","x.drugid","log2_max_conc"
+"(-)-Epigallocatechin gallate","(-)-Epigallocatechin gallate",8.22881869049588
+"(-)-Parthenolide","(-)-Parthenolide",5.04439411935845
+"3-Cl-AHPC","3-Cl-AHPC",6.04439411935845
+"5-Fluorouracil","5-Fluorouracil",7.02236781302845
+"A-804598","A-804598",6.04439411935845
+"Abiraterone","Abiraterone",4.08746284125034
+"Abt-737","Abt-737",5.20945336562895
+"AC55649","AC55649",5.04439411935845
+"Adavosertib","Adavosertib",5.04439411935845
+"Afatinib","Afatinib",6.04439411935845
+"AGK-2","AGK-2",5.04439411935845
+"Alisertib","Alisertib",5.04439411935845
+"Alpelisib","Alpelisib",6.04439411935845
+"Alvocidib","Alvocidib",6.04439411935845
+"AM-580","AM-580",7.02236781302845
+"AT-406","AT-406",6.04439411935845
+"AT7867","AT7867",6.04439411935845
+"Austocystin D","Austocystin D",4.16992500144231
+"Avicin D","Avicin D",6.04439411935845
+"Avrainvillamide","Avrainvillamide",5.04439411935845
+"Axitinib","Axitinib",5.04439411935845
+"AZ-3146","AZ-3146",5.04439411935845
+"Azacitidine","Azacitidine",6.04439411935845
+"Azd-1480","Azd-1480",6.04439411935845
+"AZD-7545","AZD-7545",6.20945336562895
+"Azd4547","Azd4547",6.04439411935845
+"AZD6482","AZD6482",6.04439411935845
+"AZD7762","AZD7762",6.04439411935845
+"AZD8055","AZD8055",5.04439411935845
+"Bafilomycin A1","Bafilomycin A1",-1.59946207041627
+"Barasertib","Barasertib",6.04439411935845
+"Bardoxolone methyl","Bardoxolone methyl",6.04439411935845
+"Bax Channel Blocker","Bax Channel Blocker",5.04439411935845
+"BEC","BEC",8.07681559705083
+"Belinostat","Belinostat",6.04439411935845
+"Bemcentinib","Bemcentinib",4.08746284125034
+"Bendamustine","Bendamustine",6.04439411935845
+"Betulinic acid","Betulinic acid",6.04439411935845
+"Bexarotene","Bexarotene",4.08746284125034
+"BI-2536","BI-2536",5.04439411935845
+"BIBR-1532","BIBR-1532",7.02236781302845
+"Birinapant","Birinapant",6.04439411935845
+"BIX-01294","BIX-01294",5.04439411935845
+"Blebbistatin","Blebbistatin",6.04439411935845
+"Bleomycin a2","Bleomycin a2",6.04439411935845
+"BMS-195614","BMS-195614",6.04439411935845
+"BMS-270394","BMS-270394",6.04439411935845
+"BMS-345541 free base","BMS-345541 free base",6.04439411935845
+"Bms-754807","Bms-754807",5.04439411935845
+"Bortezomib","Bortezomib",-2.94341647163363
+"Bosutinib","Bosutinib",6.04439411935845
+"BRD4132","BRD4132",5.32192809488736
+"BRD6340","BRD6340",5.04439411935845
+"BRD9647","BRD9647",5.04439411935845
+"BRD9876","BRD9876",6.04439411935845
+"Brefeldin A","Brefeldin A",5.20945336562895
+"Brivanib","Brivanib",6.04439411935845
+"Cabozantinib","Cabozantinib",5.04439411935845
+"Canertinib","Canertinib",4.08746284125034
+"Carboplatinum","Carboplatinum",6.04439411935845
+"CAY10594","CAY10594",5.04439411935845
+"CAY10618","CAY10618",5.04439411935845
+"CCT036477","CCT036477",5.04439411935845
+"CD-1530","CD-1530",6.04439411935845
+"CD-437","CD-437",4.16992500144231
+"Cediranib","Cediranib",6.04439411935845
+"ceranib-2","ceranib-2",6.04439411935845
+"Cerulenin","Cerulenin",7.22881869049588
+"Ch-55","Ch-55",4.08746284125034
+"CHEMBL1222381","CHEMBL1222381",8.07681559705083
+"CHEMBL374350","CHEMBL374350",5.04439411935845
+"Chir-99021","Chir-99021",5.32192809488736
+"Chlorambucil","Chlorambucil",8.07681559705083
+"CHM-1","CHM-1",4
+"CI-976","CI-976",8.07681559705083
+"Ciclopirox","Ciclopirox",6.04439411935845
+"CID-5951923","CID-5951923",6.04439411935845
+"CIL56","CIL56",1.32192809488736
+"Cimetidine","Cimetidine",8.07681559705083
+"Clofarabine","Clofarabine",6.04439411935845
+"compound 1B","compound 1B",6.04439411935845
+"Crizotinib","Crizotinib",5.04439411935845
+"Cucurbitacin I","Cucurbitacin I",4.08746284125034
+"Curcumin","Curcumin",7.4093909361377
+"Cyclophosphamide","Cyclophosphamide",7.02236781302845
+"Cyclosporin A","Cyclosporin A",3.05311133645956
+"Cytarabine","Cytarabine",6.04439411935845
+"Cytochalasin B","Cytochalasin B",5.04439411935845
+"Dabrafenib","Dabrafenib",6.04439411935845
+"Dactolisib","Dactolisib",4.08746284125034
+"Daporinad","Daporinad",-1.94341647163363
+"Darinaparsin","Darinaparsin",5.04439411935845
+"Dasatinib","Dasatinib",6.04439411935845
+"DBeQ","DBeQ",6.04439411935845
+"Decitabine","Decitabine",6.04439411935845
+"Degrasyn","Degrasyn",6.04439411935845
+"Dexamethasone","Dexamethasone",5.04439411935845
+"Dinaciclib","Dinaciclib",6.04439411935845
+"Docetaxel","Docetaxel",5.04439411935845
+"Doramapimod","Doramapimod",5.04439411935845
+"Doxorubicin","Doxorubicin",6.04439411935845
+"DTIC-Dome","DTIC-Dome",6.04439411935845
+"Elocalcitol","Elocalcitol",6.04439411935845
+"Entinostat","Entinostat",6.04439411935845
+"Erastin","Erastin",5.04439411935845
+"Erlotinib","Erlotinib",6.04439411935845
+"Etomoxir","Etomoxir",8.22881869049588
+"Etoposide","Etoposide",4.8073549220576
+"ETP-46464","ETP-46464",5.04439411935845
+"EX-527","EX-527",6.32192809488736
+"Fedratinib","Fedratinib",5.20945336562895
+"FGIN-1-27","FGIN-1-27",5.04439411935845
+"Fingolimod","Fingolimod",6.04439411935845
+"Fluvastatin","Fluvastatin",6.04439411935845
+"Foretinib","Foretinib",5.04439411935845
+"FQI-1","FQI-1",5.04439411935845
+"Fulvestrant","Fulvestrant",6.04439411935845
+"Fumonisin B(1)","Fumonisin B(1)",8.96578428466209
+"Galunisertib","Galunisertib",6.04439411935845
+"GANT-61","GANT-61",5.04439411935845
+"GDC-0879","GDC-0879",5.04439411935845
+"Gefitinib","Gefitinib",5.04439411935845
+"Gemcitabine","Gemcitabine",5.04439411935845
+"GMX-1778","GMX-1778",-1.78587519464715
+"Gossypol","Gossypol",4.16992500144231
+"GSK-3 inhibitor IX","GSK-3 inhibitor IX",5.04439411935845
+"Gsk-461364","Gsk-461364",6.04439411935845
+"GSK-J4","GSK-J4",6.04439411935845
+"GSK1059615","GSK1059615",5.04439411935845
+"GSK2636771","GSK2636771",5.04439411935845
+"GSK4112","GSK4112",6.04439411935845
+"GW-405833","GW-405833",7.02236781302845
+"GW843682X","GW843682X",4.08746284125034
+"HBX-41108","HBX-41108",6.04439411935845
+"HC-067047","HC-067047",6.04439411935845
+"HLI 373","HLI 373",5.04439411935845
+"Hyperforin","Hyperforin",5.04439411935845
+"I-Bet151 (gsk1210151A)","I-Bet151 (gsk1210151A)",6.04439411935845
+"Ibrutinib","Ibrutinib",6.04439411935845
+"IC-87114","IC-87114",6.04439411935845
+"Idelalisib","Idelalisib",6.04439411935845
+"Ifosfamide","Ifosfamide",6.04439411935845
+"Imatinib","Imatinib",5.04439411935845
+"Importazole","Importazole",5.64385618977472
+"Incyclinide","Incyclinide",4.08746284125034
+"Indisulam","Indisulam",5.04439411935845
+"Isoevodiamine","Isoevodiamine",5.04439411935845
+"Isoliquiritigenin","Isoliquiritigenin",4.08746284125034
+"Isonicotinohydroxamic acid","Isonicotinohydroxamic acid",5.04439411935845
+"ISOX","ISOX",5.04439411935845
+"Istradefylline","Istradefylline",5.04439411935845
+"Itraconazole","Itraconazole",4.08746284125034
+"IU1","IU1",6.04439411935845
+"Ixazomib","Ixazomib",5.04439411935845
+"JQ1 compound","JQ1 compound",6.04439411935845
+"JW-480","JW-480",6.04439411935845
+"JW-55","JW-55",5.04439411935845
+"JW-74","JW-74",5.04439411935845
+"KH-CB19","KH-CB19",4.08746284125034
+"KHS101","KHS101",6.04439411935845
+"Ki8751","Ki8751",6.04439411935845
+"Ko-143","Ko-143",5.04439411935845
+"KPT185","KPT185",5.04439411935845
+"Ku-0063794","Ku-0063794",5.04439411935845
+"KU-55933","KU-55933",6.04439411935845
+"KU-60019","KU-60019",6.04439411935845
+"KU 0060648","KU 0060648",4.08746284125034
+"KW-2449","KW-2449",6.04439411935845
+"KX2-391","KX2-391",5.04439411935845
+"L-685458","L-685458",4.16992500144231
+"Lapatinib","Lapatinib",5.04439411935845
+"LE-135","LE-135",5.04439411935845
+"Lenvatinib","Lenvatinib",6.04439411935845
+"Leptomycin B","Leptomycin B",6.04439411935845
+"Linifanib","Linifanib",5.04439411935845
+"Linsitinib","Linsitinib",5.04439411935845
+"Lomeguatrib","Lomeguatrib",6.04439411935845
+"Lovastatin","Lovastatin",6.04439411935845
+"LRRK2-IN-1","LRRK2-IN-1",6.04439411935845
+"LY-2183240","LY-2183240",5.04439411935845
+"Manumycin","Manumycin",4.90689059560852
+"Marinopyrrole A","Marinopyrrole A",5.04439411935845
+"Masitinib","Masitinib",6.04439411935845
+"Mdivi-1","Mdivi-1",6.04439411935845
+"Merck60","Merck60",4.08746284125034
+"Met Kinase Inhibitor","Met Kinase Inhibitor",5.04439411935845
+"Methotrexate","Methotrexate",6.04439411935845
+"Methylstat","Methylstat",6.04439411935845
+"MGCD-265 analog","MGCD-265 analog",6.04439411935845
+"MI-1","MI-1",5.04439411935845
+"MI-2","MI-2",5.04439411935845
+"Mitomycin","Mitomycin",5.64385618977472
+"MK-0752","MK-0752",6.04439411935845
+"MK-2206","MK-2206",5.04439411935845
+"ML006","ML006",7.02236781302845
+"ML031","ML031",8.07681559705083
+"ML050","ML050",6.04439411935845
+"ML083","ML083",5.20945336562895
+"ML162","ML162",5.04439411935845
+"ML203","ML203",5.20945336562895
+"ML210","ML210",5.04439411935845
+"ML239","ML239",6.04439411935845
+"ML258","ML258",5.04439411935845
+"ML311","ML311",5.04439411935845
+"MLN2480","MLN2480",5.04439411935845
+"Molibresib","Molibresib",6.04439411935845
+"Momelotinib","Momelotinib",5.04439411935845
+"Myricetin","Myricetin",6.04439411935845
+"Myriocin","Myriocin",5.04439411935845
+"N-Hexanoylsphingosine","N-Hexanoylsphingosine",4.08746284125034
+"N-Phthalyl-L-tryptophan","N-Phthalyl-L-tryptophan",8.07681559705083
+"N9-Isopropyl-olomoucine","N9-Isopropyl-olomoucine",7.64385618977472
+"nakiterpiosin","nakiterpiosin",5.04439411935845
+"Narciclasine","Narciclasine",5.04439411935845
+"Navitoclax","Navitoclax",4.08746284125034
+"necrostatin-1","necrostatin-1",9.04984854945056
+"Necrostatin-7","Necrostatin-7",6.04439411935845
+"Necrosulfonamide","Necrosulfonamide",6.04439411935845
+"Nelarabine","Nelarabine",5.04439411935845
+"Neopeltolide","Neopeltolide",5.04439411935845
+"Neratinib","Neratinib",4.08746284125034
+"Niclosamide","Niclosamide",4.08746284125034
+"Nilotinib","Nilotinib",5.04439411935845
+"Nintedanib","Nintedanib",5.04439411935845
+"NSC 74859","NSC 74859",9.04984854945056
+"NSC19630","NSC19630",4.08746284125034
+"NSC23766","NSC23766",9.04984854945056
+"NSC30930","NSC30930",6.04439411935845
+"NSC48300","NSC48300",6.04439411935845
+"NSC632839","NSC632839",5.04439411935845
+"NSC95397","NSC95397",5.04439411935845
+"Nutlin-3","Nutlin-3",7.22881869049588
+"NVP-231","NVP-231",5.04439411935845
+"NVP-ADW742","NVP-ADW742",5.04439411935845
+"NVP-BSK805","NVP-BSK805",6.04439411935845
+"Nvp-tae 684","Nvp-tae 684",5.04439411935845
+"o6-Benzylguanine","o6-Benzylguanine",6.04439411935845
+"Obatoclax","Obatoclax",6.04439411935845
+"Olaparib","Olaparib",7.22881869049588
+"Oligomycin A","Oligomycin A",5.04439411935845
+"Omacetaxine mepesuccinate","Omacetaxine mepesuccinate",6.04439411935845
+"Onalespib","Onalespib",6.04439411935845
+"Osi-027","Osi-027",6.04439411935845
+"Osi-930","Osi-930",5.04439411935845
+"Ouabain","Ouabain",7.02236781302845
+"Oxaliplatin","Oxaliplatin",6.04439411935845
+"Pac-1","Pac-1",5.04439411935845
+"Paclitaxel","Paclitaxel",5.04439411935845
+"Palmostatin B","Palmostatin B",6.04439411935845
+"Pandacostat","Pandacostat",5.04439411935845
+"Panobinostat","Panobinostat",6.04439411935845
+"Parbendazole","Parbendazole",6.04439411935845
+"Pazopanib","Pazopanib",5.04439411935845
+"PD 153035","PD 153035",5.04439411935845
+"PD318088","PD318088",6.04439411935845
+"PDMP","PDMP",6.78135971352466
+"Pevonedistat","Pevonedistat",5.20945336562895
+"PF-03758309","PF-03758309",6.04439411935845
+"PF-184","PF-184",6.04439411935845
+"PF-543","PF-543",5.04439411935845
+"PF-573228","PF-573228",5.04439411935845
+"PF-750","PF-750",7.02236781302845
+"PF 4800567 Hydrochloride","PF 4800567 Hydrochloride",6.04439411935845
+"Pha-793887","Pha-793887",6.04439411935845
+"Phloretin","Phloretin",9.2045711442492
+"PI-103","PI-103",4.16992500144231
+"Pictilisib","Pictilisib",6.04439411935845
+"pifithrin-alpha","pifithrin-alpha",6.90689059560852
+"pifithrin-mu","pifithrin-mu",5.04439411935845
+"PIK-93","PIK-93",6.04439411935845
+"Piperlongumine","Piperlongumine",5.04439411935845
+"pitstop2","pitstop2",6.04439411935845
+"Platinum","Platinum",6.04439411935845
+"Pluripotin","Pluripotin",5.04439411935845
+"PLX4720","PLX4720",5.04439411935845
+"Prima-1","Prima-1",7.4093909361377
+"PRL-3 Inhibitor I","PRL-3 Inhibitor I",7.02236781302845
+"Procarbazine","Procarbazine",6.04439411935845
+"Prochlorperazine","Prochlorperazine",5.04439411935845
+"Purmorphamine","Purmorphamine",6.22881869049588
+"PX-12","PX-12",6.64385618977472
+"Pyr-41","Pyr-41",6.04439411935845
+"QS11","QS11",4.08746284125034
+"Quizartinib","Quizartinib",5.04439411935845
+"R406 (Free base)","R406 (Free base)",4.08746284125034
+"RAD51 inhibitor B02","RAD51 inhibitor B02",6.04439411935845
+"Raf265(chir-265)","Raf265(chir-265)",5.04439411935845
+"Regorafenib","Regorafenib",4.08746284125034
+"Rigosertib","Rigosertib",6.04439411935845
+"Rita","Rita",5.04439411935845
+"RO4929097","RO4929097",6.04439411935845
+"Ruxolitinib","Ruxolitinib",6.04439411935845
+"salermide","salermide",7.64385618977472
+"Saracatinib","Saracatinib",6.04439411935845
+"SB-225002","SB-225002",5.20945336562895
+"SB-431542","SB-431542",6.04439411935845
+"SB-525334","SB-525334",6.04439411935845
+"SB-743921","SB-743921",5.04439411935845
+"SCH-529074","SCH-529074",5.04439411935845
+"SCH-79797","SCH-79797",5.20945336562895
+"Selumetinib","Selumetinib",7.02236781302845
+"Semagacestat","Semagacestat",6.04439411935845
+"Sepantronium bromide","Sepantronium bromide",0
+"Serdemetan","Serdemetan",5.04439411935845
+"Sgx-523","Sgx-523",6.04439411935845
+"SID 26681509","SID 26681509",8.22881869049588
+"Sildenafil","Sildenafil",8.07681559705083
+"Silmitasertib","Silmitasertib",5.04439411935845
+"Simvastatin","Simvastatin",5.04439411935845
+"Sirolimus","Sirolimus",4.08746284125034
+"Sitagliptin","Sitagliptin",6.04439411935845
+"SJ-172550","SJ-172550",5.04439411935845
+"Skepinone-L","Skepinone-L",6.04439411935845
+"SKI-II","SKI-II",7.02236781302845
+"SMER-3","SMER-3",6.04439411935845
+"SN-38","SN-38",0.37851162325373
+"SNS-032","SNS-032",5.04439411935845
+"Snx-2112","Snx-2112",5.04439411935845
+"Sonidegib","Sonidegib",4.08746284125034
+"Sorafenib","Sorafenib",4.08746284125034
+"Sotrastaurin","Sotrastaurin",6.04439411935845
+"spautin-1","spautin-1",6.04439411935845
+"SR1001","SR1001",6.04439411935845
+"SR8278","SR8278",6.04439411935845
+"SRT-1720","SRT-1720",4.16992500144231
+"Staurosporine","Staurosporine",1.72246602447109
+"StemRegenin 1","StemRegenin 1",6.04439411935845
+"STF-31","STF-31",6.04439411935845
+"Sunitinib","Sunitinib",6.04439411935845
+"SZ4TA2","SZ4TA2",6.04439411935845
+"Tacedinaline","Tacedinaline",5.04439411935845
+"Tacrolimus","Tacrolimus",6.20945336562895
+"Tamoxifen","Tamoxifen",6.64385618977472
+"Tandutinib","Tandutinib",6.04439411935845
+"Tanespimycin","Tanespimycin",5.04439411935845
+"Telomerase Inhibitor IX","Telomerase Inhibitor IX",5.04439411935845
+"Temozolomide","Temozolomide",6.04439411935845
+"Temsirolimus","Temsirolimus",4.08746284125034
+"Teniposide","Teniposide",5.04439411935845
+"TG-100-115","TG-100-115",6.04439411935845
+"TGX221","TGX221",6.04439411935845
+"Thalidomide","Thalidomide",6.04439411935845
+"Tigecycline","Tigecycline",6.04439411935845
+"Tipifarnib","Tipifarnib",5.04439411935845
+"Tivantinib","Tivantinib",6.04439411935845
+"Tivozanib","Tivozanib",3.70043971814109
+"Topotecan","Topotecan",6.04439411935845
+"Tosedostat","Tosedostat",7.02236781302845
+"Tozasertib","Tozasertib",6.04439411935845
+"TPCA-1","TPCA-1",6.04439411935845
+"Trametinib","Trametinib",6.04439411935845
+"Tretinoin","Tretinoin",6.04439411935845
+"Triazolothiadiazine","Triazolothiadiazine",6.04439411935845
+"Trifluoperazine","Trifluoperazine",5.04439411935845
+"Triptolide","Triptolide",-1.78587519464715
+"Tubastatin A","Tubastatin A",5.04439411935845
+"Turofexorate isopropyl","Turofexorate isopropyl",6.04439411935845
+"TW 37","TW 37",3.05311133645956
+"UNC0321","UNC0321",5.04439411935845
+"UNC0638","UNC0638",4.08746284125034
+"Unii-40E3azg1MX","Unii-40E3azg1MX",4.16992500144231
+"Valdecoxib","Valdecoxib",9.22881869049588
+"Vandetanib","Vandetanib",5.04439411935845
+"Veliparib dihydrochloride","Veliparib dihydrochloride",5.04439411935845
+"Vemurafenib","Vemurafenib",5.04439411935845
+"Venetoclax","Venetoclax",5.04439411935845
+"VER-155008","VER-155008",5.20945336562895
+"Vincristine","Vincristine",7.02236781302845
+"Vorapaxar","Vorapaxar",5.04439411935845
+"Vorinostat","Vorinostat",5.04439411935845
+"WZ4002","WZ4002",4.08746284125034
+"WZ8040","WZ8040",6.04439411935845
+"XL765","XL765",5.04439411935845
+"YK 4-279","YK 4-279",5.04439411935845
+"Z-Leu-leu-leu-al","Z-Leu-leu-leu-al",4.32192809488736
+"Zebularine","Zebularine",9.2045711442492
+"ZSTK474","ZSTK474",5.04439411935845
