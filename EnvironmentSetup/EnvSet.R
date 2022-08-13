@@ -13,5 +13,5 @@ reticulate::install_miniconda()
 ##reticulate::py_config()
 
 ##Packages to be installed in miniconda environement 
-reticulate::py_install(c("keras==2.4.3","h5py==2.10.0","tensorflow==2.4.1"),pip=TRUE)
+reticulate::py_install(c("keras==2.8.0","h5py==2.10.0","tensorflow==2.4.1"),pip=TRUE)
 

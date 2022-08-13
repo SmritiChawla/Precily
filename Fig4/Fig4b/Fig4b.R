@@ -1,29 +1,20 @@
-setwd("D:\\PrecOnco_codes_figurewise\\Fig3\\Fig3b")
-
 ##loading libraries
-library(GSVA)
-library(GSEABase)
-library(impute)
-library(tidyverse)
-library(keras)
 library(umap)
 library(ggplot2)
 
-
 ##loading Predictions
 Predictions = read.csv("ATTX_predictions.csv",sep=",",header=T,stringsAsFactors = F,row.names = 1,check.names = F)
-
 
 ##loading metadata
 labels = read.csv("Metadata.csv",sep=",",header = T,row.names = 1)
 labels = labels[colnames(Predictions),]
 
-##UMAP
+##PCA
 PCA_Res = prcomp(t(Predictions),scale = T, center = T)
+
 ##UMAP
 set.seed(6)
 um = umap(PCA_Res$x[,1:10],n_neighbors = 5)
-
 
 df1 = cbind.data.frame(um$layout,labels$Samples)
 colnames(df1) = c("UMAP1","UMAP2","Samples")
