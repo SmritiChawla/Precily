@@ -5,6 +5,35 @@
 
 ![Workflow](Workflow.png)
 
+
+<H3> System Requirements </H3>
+
+<H2> Hardware </H2>
+
+The machine learning and deep learning models were trained on a system with a following specs:
+
+* RAM: 16+ GB
+
+* CPU: 16+ cores
+
+The expected runtime for the demo code is less than a minute.
+The typical installation time for setting  up the environment is approximately 6 minutes. The runtimes are generated using a computer with the specs (16GB RAM, 4 cores@ 2.42 GHz)
+
+<h2> Platforms used for training models and other analyses </h2>
+
+* Linux (Ubuntu 20.04.3)
+
+* Windows (version 21H2, OS Build 22000.739)
+
+
+<h2> Model training </h2>
+
+The architecture used for Precily models can be found at Github link: <br> https://github.com/SmritiChawla/Precily/tree/main/Fig1/Fig1c/Pathway_based
+
+The following python scripts provide an example to train model on CCLE/GDSC dataset and save final models to make predictions on new dataset.<br>
+
+https://github.com/SmritiChawla/Precily/tree/main/Fig1/Fig1c/Pathway_based/Precily_pathways.py and https://github.com/SmritiChawla/Precily/blob/main/Fig1/Fig1c/Pathway_based/Preclly_pathway_models_on_complete_data.py
+
 This resource provides code to reproduce key results in the manuscript.
 Getting started
 
