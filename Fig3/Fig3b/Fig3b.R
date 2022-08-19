@@ -1,12 +1,10 @@
 ##Loading libraries
 library(GSVA)
-library(GSEABase)
 library(keras)
 library(impute)
 library(tidyverse)
 library(ggplot2)
 library(ggridges)
-
 
 ##Source function
 source("DrugsPred.R")
@@ -17,8 +15,8 @@ load("enrichment.scores.Rdata")
 ##loading metadata
 load("GDSC2_metadata.RData")
 
+##Drug response prediction
 df1 = drugPred(enrichment.scores,metadata,"PRAD")
-
 
 ##Reduce list to dataframe
 Pred=df1 %>% purrr::reduce(left_join, by = "DRUGS")
@@ -26,13 +24,11 @@ Predictions = Pred[,2:ncol(Pred)]
 rownames(Predictions) = Pred[,1]
 colnames(Predictions)<-gsub('FBS.','',colnames(Predictions))
 
-
 ####converting IC50 to zscores
 sdmean = read.csv("Drugs_mean_sd.csv",sep=",",header = T,stringsAsFactors = F,row.names = 1)
 pred = merge(sdmean,Predictions,by=0)
 Predictions = (pred[,5:ncol(pred)] - pred[,3])/pred[,4]
 rownames(Predictions) = pred[,1]
-
 
 ##Ridgplot
 df = reshape2::melt(Predictions)
