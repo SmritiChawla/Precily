@@ -1,6 +1,5 @@
 ##loading libraries
 library(readxl)
-library(GSEABase)
 library(GSVA)
 library(h2o)
 library(data.table)
