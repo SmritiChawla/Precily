@@ -3,7 +3,7 @@ library(keras)
 library(caret)
 library(ggpubr)
 
-##Loading DNN bootstrapped models
+##Loading models
 model1 = load_model_hdf5("Model1.hdf5")
 model2 = load_model_hdf5("Model2.hdf5")
 model3 = load_model_hdf5("Model3.hdf5")
@@ -24,12 +24,7 @@ prediction2=model2 %>% predict(xtest)
 prediction3=model3 %>% predict(xtest)
 prediction4=model4 %>% predict(xtest)
 prediction5=model5 %>% predict(xtest)
-
-
-
-
 predictions = apply(cbind.data.frame(prediction1,prediction2,prediction3,prediction4,prediction5),1,mean)
-
 
 ##computing metrics
 perf = data.frame(
@@ -37,9 +32,6 @@ perf = data.frame(
   correlation = cor(predictions, labels)
   
 )
-
-
-
 
 ##Plotting sensity scatter plot for actual vs predicted labels
 df = cbind.data.frame(labels,predictions)
