@@ -13,28 +13,23 @@ load("enrichment.scores.Rdata")
 ##Aveeraging GSVA scores of biological replicates
 enrichment.scores =t(apply(enrichment.scores, 1, function(x) tapply(x, colnames(enrichment.scores), mean)))
 
-
 ##loading metadata file
 load("GDSC2_metadata.RData")
 
 ##Drug response prediction
 df1 = drugPred(enrichment.scores,metadata,"PRAD")
 
-
 ##Reduce list to dataframe
 Pred=df1 %>%  purrr::reduce(left_join, by = "DRUGS")
-
 Predictions = Pred[,2:ncol(Pred)]
 rownames(Predictions) = Pred[,1]
 
+##Covert IC50 to Z-scores
 sdmean = read.csv("Drugs_means_sd.csv",sep=",",header = T,stringsAsFactors = F,row.names = 1)
-
 pred = merge(sdmean,Predictions,by=0)
-
 Predictions = (pred[,5:ncol(pred)] - pred[,3])/pred[,4]
 Pred = cbind.data.frame(pred[,1],Predictions)
 colnames(Pred)[1] = "DRUGS"
-
 
 ###Subsetting PI3K/MTOR signaling drugs
 pathways = read.csv("GDSC2_targeted_pathways.csv",sep=",",header = T,stringsAsFactors = F)
@@ -56,9 +51,7 @@ final$shape <- ifelse(final$DRUGS == "Afuresertib",17,19)
 final <- within(final, shape[DRUGS == 'Uprosertib' & shape == 19] <- 15)
 shape = as.numeric(final$shape)
 names(shape) = final$DRUGS
-
 final$variable <- factor(final$variable, levels = c("VEH", "APA.VEH","BIC.VEH","ENZ.VEH", "DHT","APA.DHT","BIC.DHT","ENZ.DHT"))
-
 
 ##Ploting
 ggplot(final, aes(x=variable, y=value))+ 
@@ -68,21 +61,3 @@ ggplot(final, aes(x=variable, y=value))+
   theme_classic(base_size = 20) + theme(axis.text.x = element_text(angle = 45, hjust=1,size=10),axis.text.y = element_text(size=10))
 
 
-
-###Wilcoxon test
-DHT = final[which(final$variable=="DHT"),]
-APA.DHT =final[which(final$variable=="APA.DHT"),]
-BIC.DHT =final[which(final$variable=="BIC.DHT"),]
-ENZ.DHT =final[which(final$variable=="ENZ.DHT"),]
-
-
-VEH = final[which(final$variable=="VEH"),]
-APA.VEH =final[which(final$variable=="APA.VEH"),]
-BIC.VEH =final[which(final$variable=="BIC.VEH"),]
-ENZ.VEH =final[which(final$variable=="ENZ.VEH"),]
-
-
-wilcox.test(DHT$value,VEH$value)
-wilcox.test(APA.DHT$value,APA.VEH$value)
-wilcox.test(BIC.DHT$value,BIC.VEH$value)
-wilcox.test(ENZ.DHT$value,ENZ.VEH$value)
