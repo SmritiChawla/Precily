@@ -24,7 +24,7 @@ Pred=df1 %>%  purrr::reduce(left_join, by = "DRUGS")
 Predictions = Pred[,2:ncol(Pred)]
 rownames(Predictions) = Pred[,1]
 
-##Covert IC50 to Z-scores
+##Covert LN IC50 to Z-scores
 sdmean = read.csv("Drugs_means_sd.csv",sep=",",header = T,stringsAsFactors = F,row.names = 1)
 pred = merge(sdmean,Predictions,by=0)
 Predictions = (pred[,5:ncol(pred)] - pred[,3])/pred[,4]
