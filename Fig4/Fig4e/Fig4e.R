@@ -4,12 +4,13 @@ library(ggplot2)
 
 ##loading predictions
 predictions = read.csv("ATTX_predictions.csv",sep=",",header = T,stringsAsFactors = F,check.names = F,row.names = 1)
+
+##Converting predictions into z-score
 sdmean = read.csv("Drugs_means_sd.csv",sep=",",header = T,stringsAsFactors = F,row.names = 1)
 pred = merge(sdmean,predictions,by=0)
 Predictions = (pred[,5:ncol(pred)] - pred[,3])/pred[,4]
 Predictions=cbind.data.frame(pred[,1],Predictions)
 pred = reshape2::melt(Predictions)
-
 
 ##loading metadata
 metadata = read.csv("Metadata.csv",sep=",",header = T,stringsAsFactors = F,check.names = F)
