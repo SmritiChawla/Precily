@@ -1,6 +1,5 @@
 ##Loading libraries
 library(GSVA)
-library(GSEABase)
 library(reshape2)
 library(ggplot2)
 
