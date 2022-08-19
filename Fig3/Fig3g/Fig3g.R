@@ -5,7 +5,6 @@ library(tidyverse)
 library(pheatmap)
 library(ggpubr)
 
-
 ##source function
 source("DrugsPred.R")
 
@@ -16,7 +15,6 @@ load("enrichment.scores.Rdata")
 load("GDSC2_metadata.RData")
 
 drugs = read.table("SMILES.csv",sep=",",header=F,stringsAsFactors = F,row.names = 1)
-
 
 ##Predictions
 df1 = drugPred(enrichment.scores,metadata,"PRAD")
