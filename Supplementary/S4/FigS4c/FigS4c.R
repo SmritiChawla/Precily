@@ -20,13 +20,11 @@ load("GDSC2_metadata.RData")
 
 ##Drug response prediction
 df1 = drugPred(enrichment.scores,metadata,"PRAD")
-
 Pred=df1 %>% purrr::reduce(left_join, by = "DRUGS")
-
 rownames(Pred) = Pred[,1]
 predictions = Pred[,-1]
 
-
+##Convert LN IC50 to Z-scores
 sdmean = read.csv("Drugs_means_sd.csv",sep=",",header = T,stringsAsFactors = F,row.names = 1)
 pred = merge(sdmean,predictions,by=0)
 Predictions = (pred[,5:ncol(pred)] - pred[,3])/pred[,4]
@@ -40,7 +38,6 @@ pathways=pathways[pos,]
 
 pos = which(pathways$Pathways =="Mitosis")
 pathways = pathways[pos,]
-
 dr = as.vector(pathways[,1])
 pos = which(Pred[,1] %in% dr)
 mat = Pred[pos,]
@@ -63,25 +60,5 @@ ggplot(final, aes(x=variable, y=value))+
   geom_point(aes(color=col,shape= DRUGS), position=position_jitter(width=0.15, height=0.0,seed=1),size=1,alpha=0.8,stroke=1)+ scale_shape_manual(values =shape)+
   scale_colour_identity()+ 
   theme_classic(base_size = 20) + theme(axis.text.x = element_text(angle = 45, hjust=1,size=10),axis.text.y = element_text(size=10))+ylab("Prdicted LN IC50 (Z-Score) Mitosis")
-
-
-
-###Wilcoxon test
-DHT = final[which(final$variable=="DHT"),]
-APA.DHT =final[which(final$variable=="APA.DHT"),]
-BIC.DHT =final[which(final$variable=="BIC.DHT"),]
-ENZ.DHT =final[which(final$variable=="ENZ.DHT"),]
-
-
-VEH = final[which(final$variable=="VEH"),]
-APA.VEH =final[which(final$variable=="APA.VEH"),]
-BIC.VEH =final[which(final$variable=="BIC.VEH"),]
-ENZ.VEH =final[which(final$variable=="ENZ.VEH"),]
-
-
-wilcox.test(DHT$value,VEH$value)
-wilcox.test(APA.DHT$value,APA.VEH$value)
-wilcox.test(BIC.DHT$value,BIC.VEH$value)
-wilcox.test(ENZ.DHT$value,ENZ.VEH$value)
 
 
