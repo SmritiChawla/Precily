@@ -14,11 +14,9 @@ df1 = cbind.data.frame(rownames(mat),mat)
 rownames(df1) = NULL
 colnames(df1)[1] = "Pathways" 
 
-
 ##loading metadata
 metadata = read.csv("Metadata.csv",sep=",",header = T,stringsAsFactors = F)
 colnames(metadata)[1] ="variable"
-
 
 ##Processing of data for plotting
 df2 = reshape2::melt(df1)
@@ -26,12 +24,3 @@ df3 = merge(df2,metadata,by="variable")
 ggplot(df3, aes(x=Clusters, y=value,col=Clusters))+ 
   geom_boxplot(lwd=0.4,fatten=2,alpha=0.2,outlier.shape=NA)+ scale_color_manual(values=c(Cluster1="mediumorchid1",Cluster2="deeppink",Cluster3="royalblue1"))+theme_classic(base_size = 20)+theme(axis.text.x = element_text(angle = 45, hjust=1))+ylab("GSVA scores (Proliferation pathways)") 
 
-
-###Wilcoxon Rank Sum test 
-Cluster1 = df3[which(df3$Clusters== "Cluster1"),]
-Cluster2 = df3[which(df3$Clusters== "Cluster2"),]
-Cluster3 = df3[which(df3$Clusters== "Cluster3"),]
-
-wilcox.test(Cluster1$value,Cluster2$value)
-wilcox.test(Cluster2$value,Cluster3$value)
-wilcox.test(Cluster1$value,Cluster3$value)
