@@ -26,14 +26,14 @@ for (i in unique(drugs)){
   xtest = as.matrix(test1[,3:602])
   IC50 = test1[,603]
 
-##Predictions
-prediction1 = predict(model1, xtest)
-prediction2 = predict(model2, xtest)
-prediction3 = predict(model3, xtest)
-prediction4 = predict(model4, xtest)
-prediction5 = predict(model5, xtest)
-predictions = apply(cbind.data.frame(prediction1,prediction2,prediction3,prediction4,prediction5),1,mean)
-correlation[[i]] = cor(predictions, IC50)
+  ##Predictions
+  prediction1 = predict(model1, xtest)
+  prediction2 = predict(model2, xtest)
+  prediction3 = predict(model3, xtest)
+  prediction4 = predict(model4, xtest)
+  prediction5 = predict(model5, xtest)
+  predictions = apply(cbind.data.frame(prediction1,prediction2,prediction3,prediction4,prediction5),1,mean)
+  correlation[[i]] = cor(predictions, IC50)
 }
 
 ##Correlation
