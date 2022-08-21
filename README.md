@@ -35,7 +35,8 @@ The following python scripts provide an example to train model on CCLE/GDSC data
 https://github.com/SmritiChawla/Precily/tree/main/Fig1/Fig1c/Pathway_based/Precily_pathways.py and https://github.com/SmritiChawla/Precily/blob/main/Fig1/Fig1c/Pathway_based/Preclly_pathway_models_on_complete_data.py
 
 This resource provides code to reproduce key results in the manuscript.
-Getting started
+
+<h3>Getting started</h3>
 
 <H3>Download Github repository </H3>
 
@@ -86,7 +87,7 @@ Getting started
 
    * Fig 1: This folder contains codes for evaluating the CCLE/GDSC data trained model and includes the following subdirectories: 
 
-     Fig 1c. Codes for reproducing different approaches used for benchmarking Precily. Individual codes are provided to run the respective methods. Also, codes to            assess the performance of individual methods are provided based on pre-trained models. For Random Forest, pre-trained pathway and gene based models are provided        in the link [https://drive.google.com/drive/folders/1BbSNS_DXSaLgXt8MVeoySdr0uB-81xKJ?usp=sharing]. 
+     Fig 1c. Pre-trained models to assess performance of Precily. For Random Forest, pre-trained pathway and gene based models are provided in the link [https://drive.google.com/drive/folders/1BbSNS_DXSaLgXt8MVeoySdr0uB-81xKJ?usp=sharing]. 
 
      Fig 1d. CCLE/GDSC2 data trained models and independent test dataset used to evaluate Precily based deep neural network model. 
 
@@ -139,4 +140,4 @@ Getting started
 
    Fig 5d-f. This folder contains codes for evaluating our model using the external Wagle, Nikhil, et al. dataset.
    
-* Supplementary directory contains codes for reproducing supplementary figures and some additional codes used for analyses.
+* Supplementary directory contains codes for reproducing supplementary figures.
