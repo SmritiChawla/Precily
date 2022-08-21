@@ -64,7 +64,7 @@ This resource provides code to reproduce key results in the manuscript.
 <H3>Note</H3>
 
 * Data folder contains a zipped file used for training CCLE/GDSC and CCLE/CTRPv2 models. The CCLE GSVA scores are also included in this folder. 
-* Data folder also contains pathway scores computed using GSVA for Prostate cancer datasets used for evaluation of Precily. For reproducibility, respective datasets are also provided in each figure directory.
+* Data folder also contains GSVA pathway scores for Prostate cancer datasets used for evaluation of Precily. For reproducibility, respective datasets are also provided in each figure directory.
 
 * Use R script EnvSet.R provided in the directory EnvironmentSetup to set up an environment in R for loading python trained deep neural network models.
 
