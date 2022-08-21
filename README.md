@@ -111,7 +111,7 @@ This resource provides code to reproduce key results in the manuscript.
    
   Fig 3e. This folder contains enrichment scores of LNCaP cell lines under different treatment conditions to investigate the enrichment of proliferation related pathways.
    
-  Fig 3f. This folder contains pre-trained CCLE/GDSC models and enrichment scores of LNCaP cell lines under different treatment conditions for analysis of predictions of DNA replication pathway related drug cisplatin.
+  Fig 3f. This folder contains pre-trained CCLE/GDSC models and enrichment scores of LNCaP cell lines under different treatment conditions for analysis of predictions of DNA replication pathway related drugs.
    
   Fig 3g. The folder contains CCLE/GDSC pre-trained models and file containing SMILES for Orlistat and Metformin drugs.
 
@@ -136,8 +136,8 @@ This resource provides code to reproduce key results in the manuscript.
 
    Fig 5a. This folder contains script and data used for training AutoML models.
 
-   Fig 5b. This folder contains predictions on the TCGA test dataset using the best AutoML model and code for computing survival on these predictions.
+   Fig 5b. This folder contains predictions obtained on the TCGA test dataset using the best AutoML model and code for computing survival based on these predictions.
 
-   Fig 5d-f. This folder contains codes for evaluating our model using the external Wagle, Nikhil, et al. dataset.
+   Fig 5d-f. This folder contains codes for evaluating TCGA model using the external Wagle, Nikhil, et al. dataset.
    
 * Supplementary directory contains codes for reproducing supplementary figures.
