@@ -11,7 +11,7 @@ model4 = load_model_hdf5("Model4.hdf5")
 model5 = load_model_hdf5("Model5.hdf5")
 
 
-##Reading test dataset
+##Unzip test_set file and read test dataset
 testData = read.table("test_set.csv",sep=",",header=T,stringsAsFactors = F,row.names=1)
 xtest = as.matrix(testData)
 

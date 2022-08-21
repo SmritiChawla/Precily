@@ -30,7 +30,7 @@ pred = merge(sdmean,Predictions,by=0)
 Predictions = (pred[,5:ncol(pred)] - pred[,3])/pred[,4]
 rownames(Predictions) = pred[,1]
 
-##Ridgplot
+##Ridegplot
 df = reshape2::melt(Predictions)
 df$variable = gsub("\\..*","",df$variable)
 

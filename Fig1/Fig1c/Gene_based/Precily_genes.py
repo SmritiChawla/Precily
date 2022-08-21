@@ -6,8 +6,6 @@ import tensorflow as tf
 from tensorflow import keras
 from sklearn.metrics import r2_score
 from sklearn.metrics import mean_squared_error
-import matplotlib.pyplot as plt
-
 
 tf.config.threading.set_inter_op_parallelism_threads(1)
 tf.config.threading.set_intra_op_parallelism_threads(1)

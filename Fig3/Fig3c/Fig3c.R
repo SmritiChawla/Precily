@@ -14,6 +14,7 @@ load("enrichment.scores.Rdata")
 ##loading metadata
 load("GDSC2_metadata.RData")
 
+##Drug response prediction
 df1 = drugPred(enrichment.scores,metadata,"PRAD")
 
 

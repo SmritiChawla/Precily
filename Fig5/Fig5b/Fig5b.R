@@ -14,7 +14,7 @@ clin = read.csv("TCGA_clinical_metadata.csv",sep=",",header=T,stringsAsFactors =
 ##Data preparation
 df = merge(predictions,clin,by="submitter_id")
 
-##Stratifying patients based on medoan value of probability of response
+##Stratifying patients based on median value of probability of response
 med = median(df$p1)
 pos1 = which(df$p1> med)
 pos2 = which(df$p1 < med)

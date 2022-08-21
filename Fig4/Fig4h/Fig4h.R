@@ -1,8 +1,6 @@
 ##load libraries
 library(impute)
-library(ranger)
 library(keras)
-library(ggpubr)
 library(pheatmap)
 
 

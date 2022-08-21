@@ -14,7 +14,7 @@ rownames(df1) = NULL
 colnames(df1)[1] = "Pathways" 
 
 ##loading metadata
-metadata = read.csv("Metadata_with_clusters.csv",sep=",",header = T,stringsAsFactors = F,check.names = F)
+metadata = read.csv("Metadata.csv",sep=",",header = T,stringsAsFactors = F,check.names = F)
 colnames(metadata)[1] ="variable"
 
 ##Processing of data for plotting
