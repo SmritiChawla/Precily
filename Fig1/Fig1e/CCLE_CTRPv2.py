@@ -1,26 +1,27 @@
+##Importing libraries
 import numpy as np
 import pandas as pd
 import keras_tuner as kt
 import tensorflow as tf
 from tensorflow import keras
-from sklearn.metrics import r2_score
-from sklearn.metrics import mean_squared_error
-import matplotlib.pyplot as plt
-
 
 tf.config.threading.set_inter_op_parallelism_threads(2)
 tf.config.threading.set_intra_op_parallelism_threads(2)
 np.random.seed(2)
 
-file_path = 'CCLE_CTRPv2_Training_data.csv'
+##Set working directory path and project name
 directory = ' '
 project_name = 'CCLE_CTRPv2'
+
+##Definining hyper parameters 
 layers_range = (2, 6)
 units_range = (128, 256, 4)
 lr_values = [1e-3,1e-4,1e-5]
 
-df = pd.read_csv(file_path)
+##Load training data
+df = pd.read_csv("CCLE_CTRPv2_Training_data.csv")
 
+##Define model
 def model_builder(hp):
   model = keras.Sequential()
   model.add(keras.layers.Dense(1429, input_dim = 1429, activation = 'relu'))
@@ -58,7 +59,7 @@ def model_builder(hp):
                 loss='mean_squared_error') 
   return model
 
-
+####Perfrom cell line wise split
 def cell_line_split(data, k):
   CL = data['dt.merged$CELL_LINE_NAME'].unique()
   np.random.shuffle(CL)
@@ -97,14 +98,11 @@ for i in range(5):
 
     train = pd.DataFrame(train)
     val = pd.DataFrame(val)
-    # train.to_csv(path+"Train_Set_"+str(i+1)+".csv",index=False)
-    # val.to_csv(path+"Validation_Set_"+str(i+1)+".csv",index=False)
     X_train = train.iloc[: , 2:-1]
     Y_train = train.iloc[: , -1:]
     X_val = val.iloc[: , 2:-1]
     Y_val = val.iloc[: , -1:]
     train, test = None, None
-    
     tuner = kt.Hyperband(model_builder, # the hypermodel
                     objective='val_loss', # objective to optimize
                     max_epochs=30,
@@ -120,19 +118,17 @@ for i in range(5):
     # Build the model with the optimal hyperparameters
     h_model = tuner.hypermodel.build(best_hp)
     h_model.fit(X_train, Y_train, epochs=50, verbose = 1, batch_size = 128, validation_data = (X_val, Y_val))
-    
-  
     h_model.save('precily_cv_'+str(i+1)+'.hdf5')
     h_model = None
-    
-###Training on complete training data
+   
+##############################Training of complete dataset using hyper-tuned models###################################
+######################################################################################################################
 train = pd.read_csv("Train_data.csv")
 X_train = train.iloc[: , 2:-1]
 Y_train = train.iloc[: , -1:]
 for i in range(5):
     h_model = tf.keras.models.load_model('precily_cv_'+str(i+1)+'.hdf5')
     h_model.fit(X_train, Y_train, verbose = 1, epochs=50, batch_size = 128)
-
     h_model.save(path + 'precily_cv_full_training'+str(i+1)+'.hdf5')
     h_model = None
 
