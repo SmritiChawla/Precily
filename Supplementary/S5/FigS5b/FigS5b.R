@@ -2,7 +2,6 @@
 library(ggplot2)
 
 ##loading predictions
-##loading predictions
 predictions = read.csv("ATTX_predictions.csv",sep=",",header = T,stringsAsFactors = F,row.names = 1,check.names = F)
 
 ##loading metadata
