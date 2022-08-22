@@ -3,19 +3,15 @@ library(impute)
 library(keras)
 library(pheatmap)
 
-
 ##source function
 source("DrugsPred.R")
-
 
 ##load enrichment scores
 load("enrichment.scores.Rdata")
 
-
 ##loading metadata file
 load("GDSC2_metadata.RData")
 drugs = read.table("Unseendrugs.csv",sep=",",header=F,stringsAsFactors = F,row.names = 1)
-
 
 ##Predictions
 df1 = drugPred(enrichment.scores,metadata,"PRAD")
@@ -23,8 +19,6 @@ unseen = do.call(rbind,df1)
 rownames(unseen) = colnames(enrichment.scores)
 colnames(unseen) = rownames(drugs)
 df = t(unseen)
-
-
 
 ##Loading metadata files
 meta = read.csv("Metadata.csv",sep=",",row.names=1,stringsAsFactors = F,header=T)
