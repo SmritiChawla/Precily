@@ -22,7 +22,7 @@ ggscatter(final, x = "FBS.LNCAP.2", y = "CCLE",
 )+stat_cor()  
 
 ########DU145 cell line correlation
-load("CCLE_gene_exp.Rdata")
+load("CCLE_gene_expression.Rdata")
 pos = which(colnames(mat2) == "DU145_PROSTATE")
 CCLE = as.matrix(mat2[,pos])
 rownames(CCLE) = rownames(mat2)
@@ -41,7 +41,7 @@ ggscatter(final, x = "FBS.DU145.3", y = "CCLE",
 
 
 ########PC3 cell line correlation
-load("CCLE_gene_exp.Rdata")
+load("CCLE_gene_expression.Rdata")
 pos = which(colnames(mat2) == "PC3_PROSTATE")
 CCLE = as.matrix(mat2[,pos])
 rownames(CCLE) = rownames(mat2)
@@ -59,7 +59,7 @@ ggscatter(final, x = "FBS.PC3.3", y = "CCLE",
 )+stat_cor()  
 
 ########VCAP cell line correlation
-load("CCLE_gene_exp.Rdata")
+load("CCLE_gene_expression.Rdata")
 pos = which(colnames(mat2) == "VCAP_PROSTATE")
 CCLE = as.matrix(mat2[,pos])
 rownames(CCLE) = rownames(mat2)

@@ -3,7 +3,7 @@ library(keras)
 library(ggpubr)
 library(caret)
 
-
+##Unzip Test data file and load test data
 test = read.csv("Test_data.csv",sep= ",")
 testd = as.matrix(test[,3:1431])
 IC50 = test[,1432]
@@ -16,8 +16,6 @@ model3 = load_model_hdf5("Model3.hdf5")
 model4 = load_model_hdf5("Model4.hdf5")
 model5 = load_model_hdf5("Model5.hdf5")
 
-
-
 ##Making predictions
 prediction1=model1 %>% predict(testd)
 prediction2=model2 %>% predict(testd)
@@ -25,10 +23,8 @@ prediction3=model3 %>% predict(testd)
 prediction4=model4 %>% predict(testd)
 prediction5=model5 %>% predict(testd)
 
-
 ##Averaging out predictions
 predictions = apply(cbind.data.frame(prediction1,prediction2,prediction3,prediction4,prediction5),1,mean)
-
 
 ##computing metrics
 perf = data.frame(
@@ -37,7 +33,7 @@ perf = data.frame(
 )
 
 
-##Plotting sensity scatter plot for actual vs predicted labels
+##Plotting density scatter plot for actual vs predicted labels
 df = cbind.data.frame(IC50,predictions)
 colnames(df) = c("Actual","Predicted")
 

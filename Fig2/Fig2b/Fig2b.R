@@ -31,16 +31,18 @@ geneSets = getGmt("c2.cp.v6.1.symbols.gmt")
 enrichment.scores <- gsva(df, geneSets, method="gsva")
 colnames(enrichment.scores) = c("Untreated","Stressed","Drugtolerant")
 
-
 ##loading metadata file
 load("GDSC2_metadata.RData")
 
 ##Making predictions
 df1 = drugPred(enrichment.scores,metadata,"BRCA")
 
+##Extract predicted values for Paclitaxel drugs
+Untreated = df1[[1]][which(df1[[1]][,1] == "Paclitaxel"),2]
+Sensitive = df1[[3]][which(df1[[3]][,1] == "Paclitaxel"),2]
 
 ###barplot
-d1 = c(-1.1604,-4.8086)
+d1 = c(Untreated,Sensitive)
 d1 = as.data.frame(d1)
 d1 = t(d1)
 colnames(d1) = c("Untreated","Sensitive")
@@ -48,11 +50,11 @@ d=reshape2::melt(d1)
 colnames(d)[2] = "Type" 
 
 g=ggbarplot(d, x = "Type", y = "value",
-          fill = "Type",               # change fill color by cyl
-          color = "white",            # Set bar border colors to white
-          palette = c("red","darkgreen"),            # jco journal color palett. see ?ggpar
-          sort.val = "desc",          # Sort the value in dscending order
-          sort.by.groups = FALSE,     # Don't sort inside each group
-          x.text.angle = 45          # Rotate vertically x axis texts
+          fill = "Type",               
+          color = "white",            
+          palette = c("red","darkgreen"),            
+          sort.val = "desc",          
+          sort.by.groups = FALSE,     
+          x.text.angle = 45          
 ) 
-g+ylab("Predicted Value")+xlab("")
+g+ylab("Predicted LN IC50")+xlab("")
