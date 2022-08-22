@@ -41,7 +41,7 @@ perf = data.frame(
 )
 
 
-##Plotting sensity scatter plot for actual vs predicted labels
+##Plotting density scatter plot for actual vs predicted labels
 df = cbind.data.frame(labels,predictions)
 colnames(df) = c("Actual","Predicted")
 
