@@ -30,10 +30,10 @@ The typical installation time for setting  up the environment is approximately 6
 
 The architecture used for Precily models can be found at Github link: <br> https://github.com/SmritiChawla/Precily/tree/main/Fig1/Fig1c/Pathway_based
 
-The following python script provide an example to train model on CCLE/GDSC dataset and save final models to make predictions on new dataset.<br>
+The following python script provide an example to train model on CCLE/GDSC dataset and save final models to make predictions on new dataset: 
+https://github.com/SmritiChawla/Precily/tree/main/Fig1/Fig1c/Pathway_based/Precily_pathways.py <br>
 
-https://github.com/SmritiChawla/Precily/tree/main/Fig1/Fig1c/Pathway_based/Precily_pathways.py
-This resource provides code to reproduce key results in the manuscript.
+<p>This resource provides code to reproduce key results in the manuscript. </p>
 
 <h3>Getting started</h3>
 

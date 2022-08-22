@@ -30,18 +30,15 @@ ann_colors = list(
   Samples = c("PRE-CX"="#984EA3","POST-CX"="#FF7F00",CRPC="#E41A1C",ENZS="#4DAF4A",ENZR="#377EB8"))
 
 cols = colorRampPalette(c("blue", "white","grey20"))(100)
-
 pos1 = which(meta1$Samples=="PRE-CX")
 pos2 = which(meta1$Samples=="POST-CX")
 pos3 = which(meta1$Samples=="CRPC")
 pos4 = which(meta1$Samples=="ENZS")
 pos5 = which(meta1$Samples=="ENZR")
-
 df = df[,c(pos1,pos2,pos3,pos4,pos5)]
 meta1 = meta1[colnames(df),]
 colnames(df)<-sub("ATTX.","",colnames(df))
 rownames(meta1) = colnames(df)
-
 pheatmap(df,fontsize_col = 7,col= cols,angle_col = 45,fontsize_row = 10,cluster_cols = F,annotation_colors = ann_colors,cluster_rows=F,annotation_col  = meta1,annotation_names_row = F,clustering_distance_rows = "euclidean",
          clustering_distance_cols = "euclidean",cellheight = 15,cellwidth = 9,scale="row")
 
