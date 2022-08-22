@@ -3,7 +3,6 @@ library(keras)
 library(impute)
 library(tidyverse)
 library(reshape2)
-library(ggridges)
 library(ggplot2)
 
 ##source function
