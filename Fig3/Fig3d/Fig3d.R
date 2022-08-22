@@ -4,7 +4,6 @@ library(impute)
 library(tidyverse)
 library(pheatmap)
 
-
 ##source function
 source("DrugsPred.R")
 
@@ -12,7 +11,7 @@ source("DrugsPred.R")
 load("enrichment.scores.Rdata")
 
 
-##Aveeraging GSVA scores of biological replicates
+##Averaging GSVA scores of biological replicates
 enrichment.scores =t(apply(enrichment.scores, 1, function(x) tapply(x, colnames(enrichment.scores), mean)))
 
 
