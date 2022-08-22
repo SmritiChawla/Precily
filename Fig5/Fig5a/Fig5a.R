@@ -4,7 +4,7 @@ library(h2o)
 h2o.init()
 
 df = fread("TCGA_training_data.csv")
-df = df[,-c(2,3)]
+df = df[,-c(2)]
 data = as.data.frame(df)
 data$label = as.factor(data$label)
 
@@ -38,9 +38,7 @@ for(i in seq(1:5))
 folds = list()
 for (i in 1:length(Val)){
   folds[[i]] = cbind.data.frame(rep(i,length(Val[[i]])),Val[[i]])
-  colnames(folds[[i]]) = c("Folds","patient.arr")
-  
-}
+  colnames(folds[[i]]) = c("Folds","patient.arr")}
 
 foldsc = do.call(rbind,folds)
 train =merge(foldsc,Train_set,by="patient.arr")
