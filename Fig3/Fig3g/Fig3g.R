@@ -1,9 +1,6 @@
 ##Loading libraries
 library(keras)
 library(impute)
-library(tidyverse)
-library(pheatmap)
-library(ggpubr)
 
 ##source function
 source("DrugsPred.R")
