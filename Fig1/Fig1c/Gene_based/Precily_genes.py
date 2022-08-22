@@ -4,8 +4,6 @@ import pandas as pd
 import keras_tuner as kt
 import tensorflow as tf
 from tensorflow import keras
-from sklearn.metrics import r2_score
-from sklearn.metrics import mean_squared_error
 
 tf.config.threading.set_inter_op_parallelism_threads(1)
 tf.config.threading.set_intra_op_parallelism_threads(1)
@@ -127,4 +125,21 @@ for i in range(5):
     h_model = tuner.hypermodel.build(best_hp)
     h_model.fit(X_train, Y_train, epochs=50, verbose = 1, batch_size = 128, validation_data = (X_val, Y_val))
     h_model.save('precily_cv_'+str(i+1)+'.hdf5')
+    h_model = None
+
+
+
+##############################Training of complete dataset using hyper-tuned models###################################
+######################################################################################################################
+
+###load training data
+train = pd.read_csv("Train_data_genes.csv")
+X_train = train.iloc[: , 2:-1]
+Y_train = train.iloc[: , -1:]
+
+###Load hyper-tuned models obtained from the previous step and fit training data
+for i in range(5):
+    h_model = tf.keras.models.load_model('precily_cv_'+str(i+1)+'.hdf5')
+    h_model.fit(X_train, Y_train, verbose = 1, epochs=50, batch_size = 128)
+    h_model.save('Model'+str(i+1)+'.hdf5')
     h_model = None
