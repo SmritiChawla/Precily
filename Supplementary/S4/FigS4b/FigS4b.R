@@ -10,7 +10,7 @@ source("DrugsPred.R")
 ##loading data
 load("enrichment.scores.Rdata")
 
-##Aveeraging GSVA scores of biological replicates
+##Averaging GSVA scores of biological replicates
 enrichment.scores =t(apply(enrichment.scores, 1, function(x) tapply(x, colnames(enrichment.scores), mean)))
 
 ##loading metadata file
