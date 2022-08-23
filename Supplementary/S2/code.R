@@ -13,12 +13,10 @@ final = merge(LNCAP,CCLE,by=0)
 colnames(final)[4] = "CCLE"
 ggscatter(final, x = "FBS.LNCAP.1", y = "CCLE",
           add = "reg.line", color = "navyblue",                        
-          conf.int = TRUE,cor.coef.size = 5, add.params = list(color = "red"),                      
-          )+stat_cor()  
+          conf.int = TRUE,cor.coef.size = 5, add.params = list(color = "red"))+stat_cor()  
 ggscatter(final, x = "FBS.LNCAP.2", y = "CCLE",
           add = "reg.line", color = "navyblue",                        
-          conf.int = TRUE,cor.coef.size = 5, add.params = list(color = "red"),                      
-)+stat_cor()  
+          conf.int = TRUE,cor.coef.size = 5, add.params = list(color = "red"))+stat_cor()  
 
 ##DU145 cell line correlation
 load("CCLE_gene_expression.Rdata")
@@ -31,12 +29,10 @@ final = merge(DU145,CCLE,by=0)
 colnames(final)[4] = "CCLE"
 ggscatter(final, x = "FBS.DU145.1", y = "CCLE",
           add = "reg.line", color = "navyblue",                        
-          conf.int = TRUE,cor.coef.size = 5, add.params = list(color = "red"),                      
-)+stat_cor()  
+          conf.int = TRUE,cor.coef.size = 5, add.params = list(color = "red"))+stat_cor()  
 ggscatter(final, x = "FBS.DU145.3", y = "CCLE",
           add = "reg.line", color = "navyblue",                        
-          conf.int = TRUE,cor.coef.size = 5, add.params = list(color = "red"),                      
-)+stat_cor()  
+          conf.int = TRUE,cor.coef.size = 5, add.params = list(color = "red"))+stat_cor()  
 
 ##PC3 cell line correlation
 load("CCLE_gene_expression.Rdata")
@@ -49,12 +45,10 @@ final = merge(PC3,CCLE,by=0)
 colnames(final)[4] = "CCLE"
 ggscatter(final, x = "FBS.PC3.2", y = "CCLE",
           add = "reg.line", color = "navyblue",                        
-          conf.int = TRUE,cor.coef.size = 5, add.params = list(color = "red"),                      
-)+stat_cor()  
+          conf.int = TRUE,cor.coef.size = 5, add.params = list(color = "red"))+stat_cor()  
 ggscatter(final, x = "FBS.PC3.3", y = "CCLE",
           add = "reg.line", color = "navyblue",                        
-          conf.int = TRUE,cor.coef.size = 5, add.params = list(color = "red"),                      
-)+stat_cor()  
+          conf.int = TRUE,cor.coef.size = 5, add.params = list(color = "red"))+stat_cor()  
 
 ##VCAP cell line correlation
 load("CCLE_gene_expression.Rdata")
@@ -67,9 +61,7 @@ final = merge(VCAP,CCLE,by=0)
 colnames(final)[4] = "CCLE"
 ggscatter(final, x = "FBS.VCAP.1", y = "CCLE",
           add = "reg.line", color = "navyblue",                        
-          conf.int = TRUE,cor.coef.size = 5, add.params = list(color = "red"),                      
-)+stat_cor()  
+          conf.int = TRUE,cor.coef.size = 5, add.params = list(color = "red"))+stat_cor()  
 ggscatter(final, x = "FBS.VCAP.2", y = "CCLE",
           add = "reg.line", color = "navyblue",                        
-          conf.int = TRUE,cor.coef.size = 5, add.params = list(color = "red"),                      
-)+stat_cor()  
+          conf.int = TRUE,cor.coef.size = 5, add.params = list(color = "red"))+stat_cor()  
