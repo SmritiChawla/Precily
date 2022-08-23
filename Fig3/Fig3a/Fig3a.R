@@ -21,13 +21,13 @@ Pred=df1 %>% purrr::reduce(left_join, by = "DRUGS")
 Predictions = Pred[,2:ncol(Pred)]
 rownames(Predictions) = Pred[,1]
 
-####converting LN IC50 to zscores
+##converting LN IC50 to zscores
 sdmean = read.csv("Drugs_mean_sd.csv",sep=",",header = T,stringsAsFactors = F,row.names = 1)
 pred = merge(sdmean,Predictions,by=0)
 Predictions = (pred[,5:ncol(pred)] - pred[,3])/pred[,4]
 rownames(Predictions) = pred[,1]
 
-###Processing data
+##Processing data
 pathways = read.csv("GDSC2_pathway_targets.csv",sep=",",header = T,stringsAsFactors = F)
 pos = which(pathways$X %in% rownames(Predictions))
 pathways = unique(pathways[pos,c(1,3)])
@@ -57,6 +57,6 @@ ann_colors = list(
 )
 colnames(mat)<-sub("FBS.","",colnames(mat))
 
-####Plotting heatmap
+##Plotting heatmap
 pheatmap(mat,fontsize_col = 8,col= rev(hcl.colors(20, "Spectral")),angle_col = 45,fontsize_row = 10,cluster_cols = T,annotation_colors = ann_colors,cluster_rows=F,annotation_col = labels,annotation_names_row = F,clustering_distance_rows = "euclidean",
          clustering_distance_cols = "euclidean" ,show_rownames = F,fontsize = 8,cellwidth = 15,cellheight = 2,annotation_row = ann_row)
