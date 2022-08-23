@@ -13,14 +13,14 @@ load("SRP040309_log_tpm.Rdata")
 ##Extracting samples to make predictions
 untreat = df1[,1:5]
 Stress = df1[,6:10]
-Drug = df1[,11:15]
+Drugt = df1[,11:15]
 
 ##average gene expression of cells of same type
 expAve1 = as.matrix(apply(untreat,1,mean))
 expAve2 = as.matrix(apply(Stress,1,mean))
-expAve3 = as.matrix(apply(Drug,1,mean))
-
+expAve3 = as.matrix(apply(Drugt,1,mean))
 df = cbind(expAve1,expAve2,expAve3)
+
 ##Running GSVA
 geneSets = getGmt("c2.cp.v6.1.symbols.gmt")
 enrichment.scores <- gsva(df, geneSets, method="gsva")
