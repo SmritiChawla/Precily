@@ -3,6 +3,7 @@ library(data.table)
 library(h2o)
 h2o.init()
 
+##Loading training dataset
 df = fread("TCGA_training_data.csv")
 df = df[,-c(2)]
 data = as.data.frame(df)
