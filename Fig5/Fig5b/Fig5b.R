@@ -6,10 +6,8 @@ library(survminer)
 predictions = read.csv("Predictions_on_TCGA_test_dataset.csv",sep=",",header=T,stringsAsFactors = F)
 colnames(predictions)[1] = "submitter_id"
 
-
 ##loading TCGA clinical data file
 clin = read.csv("TCGA_clinical_metadata.csv",sep=",",header=T,stringsAsFactors = F,row.names = 1)
-
 
 ##Data preparation
 df = merge(predictions,clin,by="submitter_id")
@@ -32,6 +30,5 @@ summary(fit, times=seq(0,365*5,365))
 ggsurvplot(fit, pval = TRUE, 
            break.time.by = 500,
            risk.table = TRUE,xlim=c(0,3000),
-           risk.table.height = 0.3,palette=c("red","blue"),tables.theme = theme_cleantable(),risk.table.col="black",surv.median.line="hv",
-)
+           risk.table.height = 0.3,palette=c("red","blue"),tables.theme = theme_cleantable(),risk.table.col="black",surv.median.line="hv")
 
