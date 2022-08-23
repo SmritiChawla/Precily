@@ -1,5 +1,4 @@
 ##loading libraries
-library(ggridges)
 library(ggplot2)
 
 ##loading predictions
