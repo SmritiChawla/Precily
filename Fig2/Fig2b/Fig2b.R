@@ -38,18 +38,16 @@ Sensitive = df1[[3]][which(df1[[3]][,1] == "Paclitaxel"),2]
 
 ###barplot
 d1 = c(Untreated,Sensitive)
-d1 = as.data.frame(d1)
-d1 = t(d1)
+d1 = t(as.data.frame(d1))
 colnames(d1) = c("Untreated","Sensitive")
-d=reshape2::melt(d1)
-colnames(d)[2] = "Type" 
+mat=reshape2::melt(d1)
+colnames(mat)[2] = "Type" 
 
-g=ggbarplot(d, x = "Type", y = "value",
+g=ggbarplot(mat, x = "Type", y = "value",
           fill = "Type",               
           color = "white",            
           palette = c("red","darkgreen"),            
           sort.val = "desc",          
           sort.by.groups = FALSE,     
-          x.text.angle = 45          
-) 
+          x.text.angle = 45) 
 g+ylab("Predicted LN IC50")+xlab("")
