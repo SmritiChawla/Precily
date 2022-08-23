@@ -1,6 +1,6 @@
 ##loading libraries
 library(keras)
-library(ggplot2)
+library(ggpubr)
 library(GSVA)
 library(impute)
 
