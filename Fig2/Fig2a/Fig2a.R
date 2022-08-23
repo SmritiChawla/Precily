@@ -28,10 +28,8 @@ predictions = apply(cbind.data.frame(prediction1,prediction2,prediction3,predict
 
 ##computing metrics
 perf = data.frame(
-  Rsquare = R2(predictions,labels),
-  correlation = cor(predictions, labels)
-  
-)
+  Rsquare = R2(predictions,labels[,1]),
+  correlation = cor(predictions, labels[,1]))
 
 ##Plotting density scatter plot for actual vs predicted labels
 df = cbind.data.frame(labels,predictions)
