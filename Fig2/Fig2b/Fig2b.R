@@ -1,6 +1,6 @@
 ##loading libraries
 library(keras)
-library(GSEABase)
+library(ggplot2)
 library(GSVA)
 library(impute)
 
@@ -17,15 +17,10 @@ Drug = df1[,11:15]
 
 ##average gene expression of cells of same type
 expAve1 = as.matrix(apply(untreat,1,mean))
-cluster1_ave = expAve1
-
 expAve2 = as.matrix(apply(Stress,1,mean))
-cluster2_ave = expAve2
-
 expAve3 = as.matrix(apply(Drug,1,mean))
-cluster3_ave = expAve3
 
-df = cbind(cluster1_ave,cluster2_ave,cluster3_ave)
+df = cbind(expAve1,expAve2,expAve3)
 ##Running GSVA
 geneSets = getGmt("c2.cp.v6.1.symbols.gmt")
 enrichment.scores <- gsva(df, geneSets, method="gsva")
