@@ -1,5 +1,4 @@
 ##Loading libraries
-library(GSVA)
 library(keras)
 library(impute)
 library(tidyverse)
@@ -24,7 +23,7 @@ Predictions = Pred[,2:ncol(Pred)]
 rownames(Predictions) = Pred[,1]
 colnames(Predictions)<-gsub('FBS.','',colnames(Predictions))
 
-####converting IC50 to zscores
+##converting LN IC50 to zscores
 sdmean = read.csv("Drugs_mean_sd.csv",sep=",",header = T,stringsAsFactors = F,row.names = 1)
 pred = merge(sdmean,Predictions,by=0)
 Predictions = (pred[,5:ncol(pred)] - pred[,3])/pred[,4]

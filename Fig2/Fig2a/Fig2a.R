@@ -10,7 +10,6 @@ model3 = load_model_hdf5("Model3.hdf5")
 model4 = load_model_hdf5("Model4.hdf5")
 model5 = load_model_hdf5("Model5.hdf5")
 
-
 ##Unzip test_set file and read test dataset
 testData = read.table("test_set.csv",sep=",",header=T,stringsAsFactors = F,row.names=1)
 xtest = as.matrix(testData)
@@ -28,10 +27,8 @@ predictions = apply(cbind.data.frame(prediction1,prediction2,prediction3,predict
 
 ##computing metrics
 perf = data.frame(
-  Rsquare = R2(predictions,labels),
-  correlation = cor(predictions, labels)
-  
-)
+  Rsquare = R2(predictions,labels[,1]),
+  correlation = cor(predictions, labels[,1]))
 
 ##Plotting density scatter plot for actual vs predicted labels
 df = cbind.data.frame(labels,predictions)

@@ -1,6 +1,6 @@
 ##loading libraries
 library(keras)
-library(GSEABase)
+library(ggpubr)
 library(GSVA)
 library(impute)
 
@@ -13,19 +13,14 @@ load("SRP040309_log_tpm.Rdata")
 ##Extracting samples to make predictions
 untreat = df1[,1:5]
 Stress = df1[,6:10]
-Drug = df1[,11:15]
+Drugt = df1[,11:15]
 
 ##average gene expression of cells of same type
 expAve1 = as.matrix(apply(untreat,1,mean))
-cluster1_ave = expAve1
-
 expAve2 = as.matrix(apply(Stress,1,mean))
-cluster2_ave = expAve2
+expAve3 = as.matrix(apply(Drugt,1,mean))
+df = cbind(expAve1,expAve2,expAve3)
 
-expAve3 = as.matrix(apply(Drug,1,mean))
-cluster3_ave = expAve3
-
-df = cbind(cluster1_ave,cluster2_ave,cluster3_ave)
 ##Running GSVA
 geneSets = getGmt("c2.cp.v6.1.symbols.gmt")
 enrichment.scores <- gsva(df, geneSets, method="gsva")
@@ -43,18 +38,16 @@ Sensitive = df1[[3]][which(df1[[3]][,1] == "Paclitaxel"),2]
 
 ###barplot
 d1 = c(Untreated,Sensitive)
-d1 = as.data.frame(d1)
-d1 = t(d1)
+d1 = t(as.data.frame(d1))
 colnames(d1) = c("Untreated","Sensitive")
-d=reshape2::melt(d1)
-colnames(d)[2] = "Type" 
+mat=reshape2::melt(d1)
+colnames(mat)[2] = "Type" 
 
-g=ggbarplot(d, x = "Type", y = "value",
+g=ggbarplot(mat, x = "Type", y = "value",
           fill = "Type",               
           color = "white",            
           palette = c("red","darkgreen"),            
           sort.val = "desc",          
           sort.by.groups = FALSE,     
-          x.text.angle = 45          
-) 
+          x.text.angle = 45) 
 g+ylab("Predicted LN IC50")+xlab("")

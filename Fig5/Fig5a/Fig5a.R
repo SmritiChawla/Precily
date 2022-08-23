@@ -1,22 +1,22 @@
-###loading libraries
+##loading libraries
 library(data.table)
 library(h2o)
 h2o.init()
 
+##Loading training dataset
 df = fread("TCGA_training_data.csv")
 df = df[,-c(2)]
 data = as.data.frame(df)
 data$label = as.factor(data$label)
 
-
-###Test dataset creation
+##Test dataset creation
 set.seed(10)
 random = sample(unique(data$patient.arr),0.10*length(unique(data$patient.arr)))
 pos = which(data$patient.arr %in% random)
 Train_set <- data[-pos,]
 Test_set  <- data[pos,]
 
-## Split data patient wise and creating 5 folds
+##Split data patient wise and creating 5 folds
 CL_x = unique(Train_set$patient.arr)
 Val = list()
 for(i in seq(1:5))
@@ -45,22 +45,21 @@ train =merge(foldsc,Train_set,by="patient.arr")
 train = train[,-c(1)]
 train =  as.h2o(train)
 
-
-# Response column
+##Response column
 y <- "label"
 x <- setdiff(setdiff(names(train), y), "Folds")
 
-# Run AutoML
+##Run AutoML
 aml <- h2o.automl(x = x, y = y,
                   training_frame = train,
                   max_models = 20,
                   seed = 14 ,max_runtime_secs=0,keep_cross_validation_predictions = T,keep_cross_validation_fold_assignment = T,keep_cross_validation_models = T,fold_column = "Folds",balance_classes =F)
 
-###Computing performance on test data
+##Computing performance on test data
 test = as.h2o(Test_set[,-c(1)])
 per=h2o.performance(aml@leader,test)
 
-###Making predictions on test data
+##Making predictions on test data
 pred=h2o.predict(aml@leader,test)
 pred = as.data.frame(pred)
 

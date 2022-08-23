@@ -11,7 +11,7 @@ mtor1 = cbind.data.frame(rownames(mtor),mtor)
 rownames(mtor1) = NULL
 colnames(mtor1)[1] = "Pathways" 
 
-final = melt(mtor1)
+final = reshape2::melt(mtor1)
 final$variable<-gsub('FBS.','',final$variable)
 final$variable = gsub("\\..*","",final$variable)
 final$variable <- factor(final$variable,
