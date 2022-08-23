@@ -30,7 +30,7 @@ Predictions = (pred[,5:ncol(pred)] - pred[,3])/pred[,4]
 Pred = cbind.data.frame(pred[,1],Predictions)
 colnames(Pred)<-sub("ATT.","",colnames(Pred))
 
-###Subsetting PI3K/MTOR signaling drugs
+##Subsetting PI3K/MTOR signaling drugs
 pathways = read.csv("GDSC2_targeted_pathways.csv",sep=",",header = T,stringsAsFactors = F)
 pos = which((pathways[,1]) %in% Pred[,1])
 pathways=pathways[pos,]
@@ -41,7 +41,7 @@ dr = as.vector(pathways[,1])
 pos = which(Pred[,1] %in% dr)
 mat = Pred[pos,]
 
-##data preparation
+##Data preparation
 final = melt(mat)
 colnames(final)[1]  = "DRUGS"
 
