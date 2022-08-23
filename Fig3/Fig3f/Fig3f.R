@@ -58,7 +58,7 @@ ggplot(final, aes(x=variable, y=value))+
   geom_boxplot(lwd=0.3,fatten=4,alpha=0.2,outlier.shape=NA)+ 
   geom_point(aes(color=col,shape= DRUGS), position=position_jitter(width=0.15, height=0.0,seed=1),size=1,alpha=0.8,stroke=1)+ scale_shape_manual(values =shape)+
   scale_colour_identity()+ 
-  theme_classic(base_size = 20) + theme(axis.text.x = element_text(angle = 45, hjust=1,size=10),axis.text.y = element_text(size=10)) + ylab("Prdicted LN IC50 (Z-score) DNA replication")
+  theme_classic(base_size = 20) + theme(axis.text.x = element_text(angle = 45, hjust=1,size=10),axis.text.y = element_text(size=10)) + ylab("Predicted LN IC50 (Z-score) DNA replication")
 
 
 
