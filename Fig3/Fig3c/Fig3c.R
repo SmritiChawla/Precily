@@ -23,7 +23,7 @@ Pred=df1 %>% purrr::reduce(left_join, by = "DRUGS")
 pos = which(metadata$CELL_LINE_NAME=="LNCAPCLONEFGC")
 meta = metadata[pos,]
 
-###Scatter plots
+##Scatter plots
 LNCAP_gdsc = cbind.data.frame(meta$DRUG_NAME,meta$LN_IC50)
 colnames(LNCAP_gdsc)[1] = "DRUGS"
 
@@ -37,7 +37,7 @@ mat2 = Pred[,c(1,5)]
 mat2 = merge(LNCAP_gdsc,mat2,by="DRUGS")
 colnames(mat2) = c("DRUGS","Real","Predicted")
 
-###Scatter plot
+##Scatter plot
 group = c(rep("LNCAP.1",154),rep("LNCAP.2",154))
 
 df = rbind.data.frame(mat1,mat2)
