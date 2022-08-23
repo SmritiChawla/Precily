@@ -1,9 +1,8 @@
 ##Load libraries
 library(ggpubr)
 
-###Unzip CCLE_gene_expression.zip folder and load CCLE_gene_expression.RData file
-
-########LNCaP cell line correlation
+##Unzip CCLE_gene_expression.zip folder and load CCLE_gene_expression.RData file
+##LNCaP cell line correlation
 load("CCLE_gene_expression.Rdata")
 pos = which(colnames(mat2) == "LNCAPCLONEFGC_PROSTATE")
 CCLE = as.matrix(mat2[,pos])
@@ -21,7 +20,7 @@ ggscatter(final, x = "FBS.LNCAP.2", y = "CCLE",
           conf.int = TRUE,cor.coef.size = 5, add.params = list(color = "red"),                      
 )+stat_cor()  
 
-########DU145 cell line correlation
+##DU145 cell line correlation
 load("CCLE_gene_expression.Rdata")
 pos = which(colnames(mat2) == "DU145_PROSTATE")
 CCLE = as.matrix(mat2[,pos])
@@ -39,8 +38,7 @@ ggscatter(final, x = "FBS.DU145.3", y = "CCLE",
           conf.int = TRUE,cor.coef.size = 5, add.params = list(color = "red"),                      
 )+stat_cor()  
 
-
-########PC3 cell line correlation
+##PC3 cell line correlation
 load("CCLE_gene_expression.Rdata")
 pos = which(colnames(mat2) == "PC3_PROSTATE")
 CCLE = as.matrix(mat2[,pos])
@@ -58,7 +56,7 @@ ggscatter(final, x = "FBS.PC3.3", y = "CCLE",
           conf.int = TRUE,cor.coef.size = 5, add.params = list(color = "red"),                      
 )+stat_cor()  
 
-########VCAP cell line correlation
+##VCAP cell line correlation
 load("CCLE_gene_expression.Rdata")
 pos = which(colnames(mat2) == "VCAP_PROSTATE")
 CCLE = as.matrix(mat2[,pos])
