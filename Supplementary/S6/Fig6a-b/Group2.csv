@@ -1,0 +1,49 @@
+Stage,Cancer,Freq
+NA,ACC,1
+NA,LGG,28
+NA,PAAD,2
+NA,PRAD,7
+NA,SARC,4
+Stage I,CHOL,1
+Stage I,THCA,1
+Stage IA,PAAD,2
+Stage IA,SKCM,2
+Stage IA,UCS,2
+Stage IB,STAD,4
+Stage IC,UCS,1
+Stage II,BLCA,4
+Stage II,CHOL,1
+Stage II,KICH,1
+Stage II,KIRP,1
+Stage II,SKCM,4
+Stage II,STAD,3
+Stage IIA,ESCA,1
+Stage IIA,OV,1
+Stage IIA,STAD,10
+Stage IIB,CESC,1
+Stage IIB,LUAD,2
+Stage IIB,PAAD,16
+Stage IIB,STAD,4
+Stage IIC,SKCM,3
+Stage III,BLCA,2
+Stage III,KIRP,1
+Stage III,MESO,3
+Stage III,PAAD,1
+Stage III,SKCM,1
+Stage IIIA,BRCA,1
+Stage IIIA,LIHC,2
+Stage IIIA,LUAD,1
+Stage IIIA,LUSC,2
+Stage IIIA,STAD,2
+Stage IIIB,LIHC,1
+Stage IIIC,ESCA,2
+Stage IIIC,SKCM,1
+Stage IIIC,STAD,2
+Stage IV,BLCA,4
+Stage IV,BRCA,2
+Stage IV,COAD,4
+Stage IV,KIRC,2
+Stage IV,PAAD,1
+Stage IV,STAD,1
+Stage IVA,HNSC,2
+Stage IVB,CESC,1
