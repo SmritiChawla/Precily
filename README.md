@@ -79,8 +79,8 @@ The typical installation time for setting  up the environment is approximately 6
 
    * Fig 1: This folder contains codes for evaluating the CCLE/GDSC data trained model and includes the following subdirectories: 
 
-     Fig 1c. Pre-trained models to assess performance of Precily. For Random Forest, pre-trained pathway and gene based models are provided in the link [https://drive.google.com/drive/folders/1BbSNS_DXSaLgXt8MVeoySdr0uB-81xKJ?usp=sharing]. 
-
+     Fig 1c. Pre-trained models to assess performance of Precily. 
+     
      Fig 1d. CCLE/GDSC2 data trained models and independent test dataset used to evaluate Precily based deep neural network model. 
 
      Fig 1e. CCLE/CTRPv2 data trained models and independent test dataset used to evaluate Precily based deep neural network model.
